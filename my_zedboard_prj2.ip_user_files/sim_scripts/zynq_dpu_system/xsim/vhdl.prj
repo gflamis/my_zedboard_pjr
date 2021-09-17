@@ -1,0 +1,4 @@
+vhdl xil_defaultlib  \
+"../../../bd/zynq_dpu_system/sim/zynq_dpu_system.vhd" \
+
+nosort

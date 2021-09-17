@@ -1,0 +1,60 @@
+{
+   "ActiveEmotionalView":"Default View",
+   "Default View_ScaleFactor":"0.629548",
+   "Default View_TopLeft":"-49,5",
+   "ExpandedHierarchyInLayout":"",
+   "PinnedBlocks":"",
+   "guistr":"# # String gsaved with Nlview 7.0r4  2019-12-20 bk=1.5203 VDI=41 GEI=36 GUI=JA:10.0 TLS
+#  -string -flagsOSRD
+preplace port DDR -pg 1 -lvl 5 -x 2180 -y 80 -defaultsOSRD
+preplace port FIXED_IO -pg 1 -lvl 5 -x 2180 -y 100 -defaultsOSRD
+preplace portBus USB_PULLUP -pg 1 -lvl 5 -x 2180 -y 410 -defaultsOSRD
+preplace inst processing_system7_0 -pg 1 -lvl 4 -x 1917 -y 160 -defaultsOSRD
+preplace inst DPUCZDX8G_0 -pg 1 -lvl 2 -x 1077 -y 460 -defaultsOSRD
+preplace inst hier_dpu_clk_rst -pg 1 -lvl 1 -x 160 -y 482 -defaultsOSRD
+preplace inst hier_dpu_gph -pg 1 -lvl 3 -x 1490 -y 150 -defaultsOSRD
+preplace inst xlconstant_0 -pg 1 -lvl 4 -x 1917 -y 400 -defaultsOSRD
+preplace inst hier_dpu_clk_rst|rst_gen_clk -pg 1 -lvl 2 -x 490 -y 742 -defaultsOSRD
+preplace inst hier_dpu_clk_rst|dpu_clk_wiz -pg 1 -lvl 1 -x 180 -y 652 -defaultsOSRD
+preplace inst hier_dpu_clk_rst|rst_gen_clk_dsp -pg 1 -lvl 2 -x 490 -y 532 -defaultsOSRD
+preplace inst hier_dpu_clk_rst|proc_sys_reset_0 -pg 1 -lvl 2 -x 490 -y 922 -defaultsOSRD
+preplace netloc hier_dpu_clk_rst_DSP_CLK 1 1 1 850 412n
+preplace netloc hier_dpu_clk_rst_DPU_CLK 1 1 2 880 330 1280
+preplace netloc DPUCZDX8G_0_dpu_interrupt 1 2 2 1310J 330 1680
+preplace netloc hier_dpu_clk_rst_RSTn_DSP 1 1 1 870 480n
+preplace netloc hier_dpu_clk_rst_RSTn_INTC 1 1 2 840J 160 N
+preplace netloc hier_dpu_clk_rst_RSTn_PER 1 1 2 860 320 1290
+preplace netloc CLK_1 1 0 5 -20 362 870 20 NJ 20 1680 -10 2160
+preplace netloc hier_dpu_gph_GHP_CLK_O 1 3 1 1670 180n
+preplace netloc RSTn_1 1 0 5 -30 340 NJ 340 NJ 340 NJ 340 2150
+preplace netloc hier_dpu_clk_rst_peripheral_aresetn 1 1 1 890 440n
+preplace netloc xlconstant_0_dout 1 4 1 2160 400n
+preplace netloc DPUCZDX8G_0_DPU0_M_AXI_DATA1 1 2 1 1270 100n
+preplace netloc DPUCZDX8G_0_DPU0_M_AXI_INSTR 1 2 1 1300 120n
+preplace netloc DPUCZDX8G_0_DPU0_M_AXI_DATA0 1 2 1 1260 80n
+preplace netloc processing_system7_0_DDR 1 4 1 NJ 80
+preplace netloc processing_system7_0_FIXED_IO 1 4 1 NJ 100
+preplace netloc processing_system7_0_M_AXI_GP0 1 1 4 890 0 NJ 0 NJ 0 2150
+preplace netloc hier_dpu_gph_M_AXI_LPD 1 3 1 N 160
+preplace netloc hier_dpu_gph_M_AXI_HP1_FPD 1 3 1 N 140
+preplace netloc hier_dpu_gph_M_AXI_HP0_FPD 1 3 1 N 120
+preplace netloc hier_dpu_clk_rst|clk_wiz_0_locked 1 1 2 310 642 NJ
+preplace netloc hier_dpu_clk_rst|CLK_1 1 0 2 90 572 280
+preplace netloc hier_dpu_clk_rst|RSTn_1 1 0 2 80 562 300
+preplace netloc hier_dpu_clk_rst|dpu_clk_wiz_clk_dsp 1 1 2 290 412 NJ
+preplace netloc hier_dpu_clk_rst|dpu_clk_wiz_clk_dpu 1 1 2 270 432 NJ
+preplace netloc hier_dpu_clk_rst|rst_gen_clk_peripheral_aresetn 1 2 1 N 782
+preplace netloc hier_dpu_clk_rst|rst_gen_clk_dsp_interconnect_aresetn 1 2 1 680 552n
+preplace netloc hier_dpu_clk_rst|rst_gen_clk_dsp_peripheral_aresetn 1 2 1 670 572n
+preplace netloc hier_dpu_clk_rst|proc_sys_reset_0_peripheral_aresetn 1 2 1 N 962
+levelinfo -pg 1 -50 160 1077 1490 1917 2180
+levelinfo -hier hier_dpu_clk_rst * 180 490 *
+pagesize -pg 1 -db -bbox -sgen -50 -20 2360 1060
+pagesize -hier hier_dpu_clk_rst -db -bbox -sgen 50 392 710 1022
+"
+}
+{
+   "da_axi4_cnt":"1",
+   "da_clkrst_cnt":"1",
+   "da_ps7_cnt":"1"
+}

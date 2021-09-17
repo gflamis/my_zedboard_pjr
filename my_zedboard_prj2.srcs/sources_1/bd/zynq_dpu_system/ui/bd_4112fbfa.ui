@@ -1,0 +1,34 @@
+{
+   "ActiveEmotionalView":"Default View",
+   "Default View_ScaleFactor":"1.0",
+   "Default View_TopLeft":"-603,-359",
+   "ExpandedHierarchyInLayout":"",
+   "guistr":"# # String gsaved with Nlview 7.0r4  2019-12-20 bk=1.5203 VDI=41 GEI=36 GUI=JA:10.0 TLS
+#  -string -flagsOSRD
+preplace port DPU0_M_AXI_DATA0 -pg 1 -lvl 0 -x -230 -y -280 -defaultsOSRD
+preplace port DPU0_M_AXI_DATA1 -pg 1 -lvl 0 -x -230 -y -260 -defaultsOSRD
+preplace port DPU0_M_AXI_INSTR -pg 1 -lvl 0 -x -230 -y -120 -defaultsOSRD
+preplace port M_AXI_HP0_FPD -pg 1 -lvl 2 -x 200 -y -280 -defaultsOSRD
+preplace port M_AXI_HP1_FPD -pg 1 -lvl 2 -x 200 -y -260 -defaultsOSRD
+preplace port M_AXI_LPD -pg 1 -lvl 2 -x 200 -y -60 -defaultsOSRD
+preplace port CLK -pg 1 -lvl 0 -x -230 -y -100 -defaultsOSRD
+preplace port RSTn_INTC -pg 1 -lvl 0 -x -230 -y -80 -defaultsOSRD
+preplace port RSTn_PERI -pg 1 -lvl 0 -x -230 -y -40 -defaultsOSRD
+preplace port GHP_RSTn -pg 1 -lvl 0 -x -230 -y 0 -defaultsOSRD
+preplace port GHP_CLK_I -pg 1 -lvl 0 -x -230 -y -20 -defaultsOSRD
+preplace port GHP_CLK_O -pg 1 -lvl 2 -x 200 -y 70 -defaultsOSRD
+preplace inst dpu_intc_M_AXI_LPD -pg 1 -lvl 1 -x 30 -y -60 -defaultsOSRD
+preplace netloc CLK_1 1 0 1 -210 -100n
+preplace netloc RSTn_INTC_1 1 0 1 N -80
+preplace netloc RSTn_PERI_1 1 0 1 N -40
+preplace netloc GHP_CLK_I_1 1 0 2 -210 70 N
+preplace netloc GHP_RSTn_1 1 0 1 N 0
+preplace netloc dpu_intc_M_AXI_LPD_M00_AXI 1 1 1 N -60
+preplace netloc DPU0_M_AXI_INSTR_1 1 0 1 N -120
+preplace netloc DPU0_M_AXI_DATA0_1 1 0 2 NJ -280 N
+preplace netloc DPU0_M_AXI_DATA1_1 1 0 2 NJ -260 N
+levelinfo -pg 1 -230 30 200
+pagesize -pg 1 -db -bbox -sgen -430 -320 370 720
+"
+}
+

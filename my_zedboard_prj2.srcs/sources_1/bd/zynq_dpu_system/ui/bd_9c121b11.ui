@@ -1,0 +1,31 @@
+{
+   "ActiveEmotionalView":"Default View",
+   "Default View_ScaleFactor":"1.0",
+   "Default View_TopLeft":"-328,-109",
+   "ExpandedHierarchyInLayout":"",
+   "guistr":"# # String gsaved with Nlview 7.0r4  2019-12-20 bk=1.5203 VDI=41 GEI=36 GUI=JA:10.0 TLS
+#  -string -flagsOSRD
+preplace port RSTn -pg 1 -lvl 0 -x -160 -y 40 -defaultsOSRD
+preplace port CLK -pg 1 -lvl 0 -x -160 -y 160 -defaultsOSRD
+preplace port DSP_CLK -pg 1 -lvl 3 -x 570 -y -60 -defaultsOSRD
+preplace port DPU_CLK -pg 1 -lvl 3 -x 570 -y 160 -defaultsOSRD
+preplace port LOCKED -pg 1 -lvl 3 -x 570 -y 140 -defaultsOSRD
+preplace portBus RSTn_DSP -pg 1 -lvl 3 -x 570 -y 80 -defaultsOSRD
+preplace portBus RSTn_INTC -pg 1 -lvl 3 -x 570 -y 290 -defaultsOSRD
+preplace portBus RSTn_PER -pg 1 -lvl 3 -x 570 -y 310 -defaultsOSRD
+preplace inst rst_gen_clk -pg 1 -lvl 2 -x 370 -y 40 -defaultsOSRD
+preplace inst dpu_clk_wiz -pg 1 -lvl 1 -x -50 -y 150 -defaultsOSRD
+preplace inst rst_gen_clk_dsp -pg 1 -lvl 2 -x 370 -y 270 -defaultsOSRD
+preplace netloc clk_wiz_0_locked 1 1 2 60 140 N
+preplace netloc CLK_1 1 0 1 N 160
+preplace netloc RSTn_1 1 0 2 -140 40 50
+preplace netloc dpu_clk_wiz_clk_dsp 1 1 2 40 -60 N
+preplace netloc dpu_clk_wiz_clk_dpu 1 1 2 70 160 N
+preplace netloc rst_gen_clk_peripheral_aresetn 1 2 1 N 80
+preplace netloc rst_gen_clk_dsp_interconnect_aresetn 1 2 1 N 290
+preplace netloc rst_gen_clk_dsp_peripheral_aresetn 1 2 1 N 310
+levelinfo -pg 1 -160 -50 370 570
+pagesize -pg 1 -db -bbox -sgen -250 -80 740 370
+"
+}
+

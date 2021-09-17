@@ -1,0 +1,797 @@
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2020.2 (lin64) Build 3064766 Wed Nov 18 09:12:47 MST 2020
+| Date         : Fri Sep 17 00:18:55 2021
+| Host         : gflamis-ecsa-lab running 64-bit Ubuntu 20.04.3 LTS
+| Command      : report_drc -file zynq_dpu_system_wrapper_drc_routed.rpt -pb zynq_dpu_system_wrapper_drc_routed.pb -rpx zynq_dpu_system_wrapper_drc_routed.rpx
+| Design       : zynq_dpu_system_wrapper
+| Device       : xc7z020clg484-1
+| Speed File   : -1
+| Design State : Fully Routed
+---------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Report DRC
+
+Table of Contents
+-----------------
+1. REPORT SUMMARY
+2. REPORT DETAILS
+
+1. REPORT SUMMARY
+-----------------
+            Netlist: netlist
+          Floorplan: design_1
+      Design limits: <entire design considered>
+           Ruledeck: default
+             Max violations: <unlimited>
+             Violations found: 152
++-----------+----------+-------------------------------+------------+
+| Rule      | Severity | Description                   | Violations |
++-----------+----------+-------------------------------+------------+
+| DPOP-1    | Warning  | PREG Output pipelining        | 2          |
+| REQP-1723 | Warning  | DSP_Abus_sign_bit_restriction | 150        |
++-----------+----------+-------------------------------+------------+
+
+2. REPORT DETAILS
+-----------------
+DPOP-1#1 Warning
+PREG Output pipelining  
+DSP zynq_dpu_system_i/DPUCZDX8G_0/inst/g_7d88779a.u_13a9931e/u_5f486510/u_84b5e4a7/u_46f2957a/s_d913a3b9_reg output zynq_dpu_system_i/DPUCZDX8G_0/inst/g_7d88779a.u_13a9931e/u_5f486510/u_84b5e4a7/u_46f2957a/s_d913a3b9_reg/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+Related violations: <none>
+
+DPOP-1#2 Warning
+PREG Output pipelining  
+DSP zynq_dpu_system_i/DPUCZDX8G_0/inst/g_7d88779a.u_13a9931e/u_5f486510/u_e937cb5b/u_075178ae/u_05ef6934/u_dsp/g_1beb2338.u_dsp48e1 output zynq_dpu_system_i/DPUCZDX8G_0/inst/g_7d88779a.u_13a9931e/u_5f486510/u_e937cb5b/u_075178ae/u_05ef6934/u_dsp/g_1beb2338.u_dsp48e1/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+Related violations: <none>
+
+REQP-1723#1 Warning
+DSP_Abus_sign_bit_restriction  
+zynq_dpu_system_i/DPUCZDX8G_0/inst/g_7d88779a.u_13a9931e/u_5f486510/u_3655bc1a/u_963bfea3/u_e3bb2415/u_4e201af0/g_91e80051[0].g_166ccf06[0].g_418b9e6a.u_bf01e765/u_dsp/g_1beb2338.u_dsp48e1: When using the PreAdder and USE_DPORT is TRUE, the A operand should be restricted to 24 bit two's complement (and sign extended) to avoid over/underflow in the pre-add stage.
+Related violations: <none>
+
+REQP-1723#2 Warning
+DSP_Abus_sign_bit_restriction  
+zynq_dpu_system_i/DPUCZDX8G_0/inst/g_7d88779a.u_13a9931e/u_5f486510/u_3655bc1a/u_963bfea3/u_e3bb2415/u_4e201af0/g_91e80051[1].g_166ccf06[0].g_418b9e6a.u_bf01e765/u_dsp/g_1beb2338.u_dsp48e1: When using the PreAdder and USE_DPORT is TRUE, the A operand should be restricted to 24 bit two's complement (and sign extended) to avoid over/underflow in the pre-add stage.
+Related violations: <none>
+
+REQP-1723#3 Warning
+DSP_Abus_sign_bit_restriction  
+zynq_dpu_system_i/DPUCZDX8G_0/inst/g_7d88779a.u_13a9931e/u_5f486510/u_3655bc1a/u_963bfea3/u_e3bb2415/u_4e201af0/g_91e80051[2].g_166ccf06[0].g_418b9e6a.u_bf01e765/u_dsp/g_1beb2338.u_dsp48e1: When using the PreAdder and USE_DPORT is TRUE, the A operand should be restricted to 24 bit two's complement (and sign extended) to avoid over/underflow in the pre-add stage.
+Related violations: <none>
+
+REQP-1723#4 Warning
+DSP_Abus_sign_bit_restriction  
+zynq_dpu_system_i/DPUCZDX8G_0/inst/g_7d88779a.u_13a9931e/u_5f486510/u_3655bc1a/u_963bfea3/u_e3bb2415/u_4e201af0/g_91e80051[3].g_166ccf06[0].g_418b9e6a.u_bf01e765/u_dsp/g_1beb2338.u_dsp48e1: When using the PreAdder and USE_DPORT is TRUE, the A operand should be restricted to 24 bit two's complement (and sign extended) to avoid over/underflow in the pre-add stage.
+Related violations: <none>
+
+REQP-1723#5 Warning
+DSP_Abus_sign_bit_restriction  
+zynq_dpu_system_i/DPUCZDX8G_0/inst/g_7d88779a.u_13a9931e/u_5f486510/u_3655bc1a/u_963bfea3/u_e3bb2415/u_4e201af0/g_91e80051[4].g_166ccf06[0].g_418b9e6a.u_bf01e765/u_dsp/g_1beb2338.u_dsp48e1: When using the PreAdder and USE_DPORT is TRUE, the A operand should be restricted to 24 bit two's complement (and sign extended) to avoid over/underflow in the pre-add stage.
+Related violations: <none>
+
+REQP-1723#6 Warning
+DSP_Abus_sign_bit_restriction  
+zynq_dpu_system_i/DPUCZDX8G_0/inst/g_7d88779a.u_13a9931e/u_5f486510/u_3655bc1a/u_963bfea3/u_e3bb2415/u_4e201af0/g_91e80051[5].g_166ccf06[0].g_418b9e6a.u_bf01e765/u_dsp/g_1beb2338.u_dsp48e1: When using the PreAdder and USE_DPORT is TRUE, the A operand should be restricted to 24 bit two's complement (and sign extended) to avoid over/underflow in the pre-add stage.
+Related violations: <none>
+
+REQP-1723#7 Warning
+DSP_Abus_sign_bit_restriction  
+zynq_dpu_system_i/DPUCZDX8G_0/inst/g_7d88779a.u_13a9931e/u_5f486510/u_fce954ef/u_b581cdc1/u_42480e0a/g_2c24a95e[0].g_1aeb70f6[0].g_4961f818[0].u_2182c70c/g_50106be6[0].g_9b47af81.u_15feb834/u_dsp/g_1beb2338.u_dsp48e1: When using the PreAdder and USE_DPORT is TRUE, the A operand should be restricted to 24 bit two's complement (and sign extended) to avoid over/underflow in the pre-add stage.
+Related violations: <none>
+
+REQP-1723#8 Warning
+DSP_Abus_sign_bit_restriction  
+zynq_dpu_system_i/DPUCZDX8G_0/inst/g_7d88779a.u_13a9931e/u_5f486510/u_fce954ef/u_b581cdc1/u_42480e0a/g_2c24a95e[0].g_1aeb70f6[0].g_4961f818[0].u_2182c70c/g_50106be6[1].g_9b47af81.u_15feb834/u_dsp/g_1beb2338.u_dsp48e1: When using the PreAdder and USE_DPORT is TRUE, the A operand should be restricted to 24 bit two's complement (and sign extended) to avoid over/underflow in the pre-add stage.
+Related violations: <none>
+
+REQP-1723#9 Warning
+DSP_Abus_sign_bit_restriction  
+zynq_dpu_system_i/DPUCZDX8G_0/inst/g_7d88779a.u_13a9931e/u_5f486510/u_fce954ef/u_b581cdc1/u_42480e0a/g_2c24a95e[0].g_1aeb70f6[0].g_4961f818[1].u_2182c70c/g_50106be6[0].g_9b47af81.u_15feb834/u_dsp/g_1beb2338.u_dsp48e1: When using the PreAdder and USE_DPORT is TRUE, the A operand should be restricted to 24 bit two's complement (and sign extended) to avoid over/underflow in the pre-add stage.
+Related violations: <none>
+
+REQP-1723#10 Warning
+DSP_Abus_sign_bit_restriction  
+zynq_dpu_system_i/DPUCZDX8G_0/inst/g_7d88779a.u_13a9931e/u_5f486510/u_fce954ef/u_b581cdc1/u_42480e0a/g_2c24a95e[0].g_1aeb70f6[0].g_4961f818[1].u_2182c70c/g_50106be6[1].g_9b47af81.u_15feb834/u_dsp/g_1beb2338.u_dsp48e1: When using the PreAdder and USE_DPORT is TRUE, the A operand should be restricted to 24 bit two's complement (and sign extended) to avoid over/underflow in the pre-add stage.
+Related violations: <none>
+
+REQP-1723#11 Warning
+DSP_Abus_sign_bit_restriction  
+zynq_dpu_system_i/DPUCZDX8G_0/inst/g_7d88779a.u_13a9931e/u_5f486510/u_fce954ef/u_b581cdc1/u_42480e0a/g_2c24a95e[0].g_1aeb70f6[0].g_4961f818[2].u_2182c70c/g_50106be6[0].g_9b47af81.u_15feb834/u_dsp/g_1beb2338.u_dsp48e1: When using the PreAdder and USE_DPORT is TRUE, the A operand should be restricted to 24 bit two's complement (and sign extended) to avoid over/underflow in the pre-add stage.
+Related violations: <none>
+
+REQP-1723#12 Warning
+DSP_Abus_sign_bit_restriction  
+zynq_dpu_system_i/DPUCZDX8G_0/inst/g_7d88779a.u_13a9931e/u_5f486510/u_fce954ef/u_b581cdc1/u_42480e0a/g_2c24a95e[0].g_1aeb70f6[0].g_4961f818[2].u_2182c70c/g_50106be6[1].g_9b47af81.u_15feb834/u_dsp/g_1beb2338.u_dsp48e1: When using the PreAdder and USE_DPORT is TRUE, the A operand should be restricted to 24 bit two's complement (and sign extended) to avoid over/underflow in the pre-add stage.
+Related violations: <none>
+
+REQP-1723#13 Warning
+DSP_Abus_sign_bit_restriction  
+zynq_dpu_system_i/DPUCZDX8G_0/inst/g_7d88779a.u_13a9931e/u_5f486510/u_fce954ef/u_b581cdc1/u_42480e0a/g_2c24a95e[0].g_1aeb70f6[0].g_4961f818[3].u_2182c70c/g_50106be6[0].g_9b47af81.u_15feb834/u_dsp/g_1beb2338.u_dsp48e1: When using the PreAdder and USE_DPORT is TRUE, the A operand should be restricted to 24 bit two's complement (and sign extended) to avoid over/underflow in the pre-add stage.
+Related violations: <none>
+
+REQP-1723#14 Warning
+DSP_Abus_sign_bit_restriction  
+zynq_dpu_system_i/DPUCZDX8G_0/inst/g_7d88779a.u_13a9931e/u_5f486510/u_fce954ef/u_b581cdc1/u_42480e0a/g_2c24a95e[0].g_1aeb70f6[0].g_4961f818[3].u_2182c70c/g_50106be6[1].g_9b47af81.u_15feb834/u_dsp/g_1beb2338.u_dsp48e1: When using the PreAdder and USE_DPORT is TRUE, the A operand should be restricted to 24 bit two's complement (and sign extended) to avoid over/underflow in the pre-add stage.
+Related violations: <none>
+
+REQP-1723#15 Warning
+DSP_Abus_sign_bit_restriction  
+zynq_dpu_system_i/DPUCZDX8G_0/inst/g_7d88779a.u_13a9931e/u_5f486510/u_fce954ef/u_b581cdc1/u_42480e0a/g_2c24a95e[0].g_1aeb70f6[0].g_4961f818[4].u_2182c70c/g_50106be6[0].g_9b47af81.u_15feb834/u_dsp/g_1beb2338.u_dsp48e1: When using the PreAdder and USE_DPORT is TRUE, the A operand should be restricted to 24 bit two's complement (and sign extended) to avoid over/underflow in the pre-add stage.
+Related violations: <none>
+
+REQP-1723#16 Warning
+DSP_Abus_sign_bit_restriction  
+zynq_dpu_system_i/DPUCZDX8G_0/inst/g_7d88779a.u_13a9931e/u_5f486510/u_fce954ef/u_b581cdc1/u_42480e0a/g_2c24a95e[0].g_1aeb70f6[0].g_4961f818[4].u_2182c70c/g_50106be6[1].g_9b47af81.u_15feb834/u_dsp/g_1beb2338.u_dsp48e1: When using the PreAdder and USE_DPORT is TRUE, the A operand should be restricted to 24 bit two's complement (and sign extended) to avoid over/underflow in the pre-add stage.
+Related violations: <none>
+
+REQP-1723#17 Warning
+DSP_Abus_sign_bit_restriction  
+zynq_dpu_system_i/DPUCZDX8G_0/inst/g_7d88779a.u_13a9931e/u_5f486510/u_fce954ef/u_b581cdc1/u_42480e0a/g_2c24a95e[0].g_1aeb70f6[0].g_4961f818[5].u_2182c70c/g_50106be6[0].g_9b47af81.u_15feb834/u_dsp/g_1beb2338.u_dsp48e1: When using the PreAdder and USE_DPORT is TRUE, the A operand should be restricted to 24 bit two's complement (and sign extended) to avoid over/underflow in the pre-add stage.
+Related violations: <none>
+
+REQP-1723#18 Warning
+DSP_Abus_sign_bit_restriction  
+zynq_dpu_system_i/DPUCZDX8G_0/inst/g_7d88779a.u_13a9931e/u_5f486510/u_fce954ef/u_b581cdc1/u_42480e0a/g_2c24a95e[0].g_1aeb70f6[0].g_4961f818[5].u_2182c70c/g_50106be6[1].g_9b47af81.u_15feb834/u_dsp/g_1beb2338.u_dsp48e1: When using the PreAdder and USE_DPORT is TRUE, the A operand should be restricted to 24 bit two's complement (and sign extended) to avoid over/underflow in the pre-add stage.
+Related violations: <none>
+
+REQP-1723#19 Warning
+DSP_Abus_sign_bit_restriction  
+zynq_dpu_system_i/DPUCZDX8G_0/inst/g_7d88779a.u_13a9931e/u_5f486510/u_fce954ef/u_b581cdc1/u_42480e0a/g_2c24a95e[10].g_1aeb70f6[0].g_4961f818[0].u_2182c70c/g_50106be6[0].g_9b47af81.u_15feb834/u_dsp/g_1beb2338.u_dsp48e1: When using the PreAdder and USE_DPORT is TRUE, the A operand should be restricted to 24 bit two's complement (and sign extended) to avoid over/underflow in the pre-add stage.
+Related violations: <none>
+
+REQP-1723#20 Warning
+DSP_Abus_sign_bit_restriction  
+zynq_dpu_system_i/DPUCZDX8G_0/inst/g_7d88779a.u_13a9931e/u_5f486510/u_fce954ef/u_b581cdc1/u_42480e0a/g_2c24a95e[10].g_1aeb70f6[0].g_4961f818[0].u_2182c70c/g_50106be6[1].g_9b47af81.u_15feb834/u_dsp/g_1beb2338.u_dsp48e1: When using the PreAdder and USE_DPORT is TRUE, the A operand should be restricted to 24 bit two's complement (and sign extended) to avoid over/underflow in the pre-add stage.
+Related violations: <none>
+
+REQP-1723#21 Warning
+DSP_Abus_sign_bit_restriction  
+zynq_dpu_system_i/DPUCZDX8G_0/inst/g_7d88779a.u_13a9931e/u_5f486510/u_fce954ef/u_b581cdc1/u_42480e0a/g_2c24a95e[10].g_1aeb70f6[0].g_4961f818[1].u_2182c70c/g_50106be6[0].g_9b47af81.u_15feb834/u_dsp/g_1beb2338.u_dsp48e1: When using the PreAdder and USE_DPORT is TRUE, the A operand should be restricted to 24 bit two's complement (and sign extended) to avoid over/underflow in the pre-add stage.
+Related violations: <none>
+
+REQP-1723#22 Warning
+DSP_Abus_sign_bit_restriction  
+zynq_dpu_system_i/DPUCZDX8G_0/inst/g_7d88779a.u_13a9931e/u_5f486510/u_fce954ef/u_b581cdc1/u_42480e0a/g_2c24a95e[10].g_1aeb70f6[0].g_4961f818[1].u_2182c70c/g_50106be6[1].g_9b47af81.u_15feb834/u_dsp/g_1beb2338.u_dsp48e1: When using the PreAdder and USE_DPORT is TRUE, the A operand should be restricted to 24 bit two's complement (and sign extended) to avoid over/underflow in the pre-add stage.
+Related violations: <none>
+
+REQP-1723#23 Warning
+DSP_Abus_sign_bit_restriction  
+zynq_dpu_system_i/DPUCZDX8G_0/inst/g_7d88779a.u_13a9931e/u_5f486510/u_fce954ef/u_b581cdc1/u_42480e0a/g_2c24a95e[10].g_1aeb70f6[0].g_4961f818[2].u_2182c70c/g_50106be6[0].g_9b47af81.u_15feb834/u_dsp/g_1beb2338.u_dsp48e1: When using the PreAdder and USE_DPORT is TRUE, the A operand should be restricted to 24 bit two's complement (and sign extended) to avoid over/underflow in the pre-add stage.
+Related violations: <none>
+
+REQP-1723#24 Warning
+DSP_Abus_sign_bit_restriction  
+zynq_dpu_system_i/DPUCZDX8G_0/inst/g_7d88779a.u_13a9931e/u_5f486510/u_fce954ef/u_b581cdc1/u_42480e0a/g_2c24a95e[10].g_1aeb70f6[0].g_4961f818[2].u_2182c70c/g_50106be6[1].g_9b47af81.u_15feb834/u_dsp/g_1beb2338.u_dsp48e1: When using the PreAdder and USE_DPORT is TRUE, the A operand should be restricted to 24 bit two's complement (and sign extended) to avoid over/underflow in the pre-add stage.
+Related violations: <none>
+
+REQP-1723#25 Warning
+DSP_Abus_sign_bit_restriction  
+zynq_dpu_system_i/DPUCZDX8G_0/inst/g_7d88779a.u_13a9931e/u_5f486510/u_fce954ef/u_b581cdc1/u_42480e0a/g_2c24a95e[10].g_1aeb70f6[0].g_4961f818[3].u_2182c70c/g_50106be6[0].g_9b47af81.u_15feb834/u_dsp/g_1beb2338.u_dsp48e1: When using the PreAdder and USE_DPORT is TRUE, the A operand should be restricted to 24 bit two's complement (and sign extended) to avoid over/underflow in the pre-add stage.
+Related violations: <none>
+
+REQP-1723#26 Warning
+DSP_Abus_sign_bit_restriction  
+zynq_dpu_system_i/DPUCZDX8G_0/inst/g_7d88779a.u_13a9931e/u_5f486510/u_fce954ef/u_b581cdc1/u_42480e0a/g_2c24a95e[10].g_1aeb70f6[0].g_4961f818[3].u_2182c70c/g_50106be6[1].g_9b47af81.u_15feb834/u_dsp/g_1beb2338.u_dsp48e1: When using the PreAdder and USE_DPORT is TRUE, the A operand should be restricted to 24 bit two's complement (and sign extended) to avoid over/underflow in the pre-add stage.
+Related violations: <none>
+
+REQP-1723#27 Warning
+DSP_Abus_sign_bit_restriction  
+zynq_dpu_system_i/DPUCZDX8G_0/inst/g_7d88779a.u_13a9931e/u_5f486510/u_fce954ef/u_b581cdc1/u_42480e0a/g_2c24a95e[10].g_1aeb70f6[0].g_4961f818[4].u_2182c70c/g_50106be6[0].g_9b47af81.u_15feb834/u_dsp/g_1beb2338.u_dsp48e1: When using the PreAdder and USE_DPORT is TRUE, the A operand should be restricted to 24 bit two's complement (and sign extended) to avoid over/underflow in the pre-add stage.
+Related violations: <none>
+
+REQP-1723#28 Warning
+DSP_Abus_sign_bit_restriction  
+zynq_dpu_system_i/DPUCZDX8G_0/inst/g_7d88779a.u_13a9931e/u_5f486510/u_fce954ef/u_b581cdc1/u_42480e0a/g_2c24a95e[10].g_1aeb70f6[0].g_4961f818[4].u_2182c70c/g_50106be6[1].g_9b47af81.u_15feb834/u_dsp/g_1beb2338.u_dsp48e1: When using the PreAdder and USE_DPORT is TRUE, the A operand should be restricted to 24 bit two's complement (and sign extended) to avoid over/underflow in the pre-add stage.
+Related violations: <none>
+
+REQP-1723#29 Warning
+DSP_Abus_sign_bit_restriction  
+zynq_dpu_system_i/DPUCZDX8G_0/inst/g_7d88779a.u_13a9931e/u_5f486510/u_fce954ef/u_b581cdc1/u_42480e0a/g_2c24a95e[10].g_1aeb70f6[0].g_4961f818[5].u_2182c70c/g_50106be6[0].g_9b47af81.u_15feb834/u_dsp/g_1beb2338.u_dsp48e1: When using the PreAdder and USE_DPORT is TRUE, the A operand should be restricted to 24 bit two's complement (and sign extended) to avoid over/underflow in the pre-add stage.
+Related violations: <none>
+
+REQP-1723#30 Warning
+DSP_Abus_sign_bit_restriction  
+zynq_dpu_system_i/DPUCZDX8G_0/inst/g_7d88779a.u_13a9931e/u_5f486510/u_fce954ef/u_b581cdc1/u_42480e0a/g_2c24a95e[10].g_1aeb70f6[0].g_4961f818[5].u_2182c70c/g_50106be6[1].g_9b47af81.u_15feb834/u_dsp/g_1beb2338.u_dsp48e1: When using the PreAdder and USE_DPORT is TRUE, the A operand should be restricted to 24 bit two's complement (and sign extended) to avoid over/underflow in the pre-add stage.
+Related violations: <none>
+
+REQP-1723#31 Warning
+DSP_Abus_sign_bit_restriction  
+zynq_dpu_system_i/DPUCZDX8G_0/inst/g_7d88779a.u_13a9931e/u_5f486510/u_fce954ef/u_b581cdc1/u_42480e0a/g_2c24a95e[11].g_1aeb70f6[0].g_4961f818[0].u_2182c70c/g_50106be6[0].g_9b47af81.u_15feb834/u_dsp/g_1beb2338.u_dsp48e1: When using the PreAdder and USE_DPORT is TRUE, the A operand should be restricted to 24 bit two's complement (and sign extended) to avoid over/underflow in the pre-add stage.
+Related violations: <none>
+
+REQP-1723#32 Warning
+DSP_Abus_sign_bit_restriction  
+zynq_dpu_system_i/DPUCZDX8G_0/inst/g_7d88779a.u_13a9931e/u_5f486510/u_fce954ef/u_b581cdc1/u_42480e0a/g_2c24a95e[11].g_1aeb70f6[0].g_4961f818[0].u_2182c70c/g_50106be6[1].g_9b47af81.u_15feb834/u_dsp/g_1beb2338.u_dsp48e1: When using the PreAdder and USE_DPORT is TRUE, the A operand should be restricted to 24 bit two's complement (and sign extended) to avoid over/underflow in the pre-add stage.
+Related violations: <none>
+
+REQP-1723#33 Warning
+DSP_Abus_sign_bit_restriction  
+zynq_dpu_system_i/DPUCZDX8G_0/inst/g_7d88779a.u_13a9931e/u_5f486510/u_fce954ef/u_b581cdc1/u_42480e0a/g_2c24a95e[11].g_1aeb70f6[0].g_4961f818[1].u_2182c70c/g_50106be6[0].g_9b47af81.u_15feb834/u_dsp/g_1beb2338.u_dsp48e1: When using the PreAdder and USE_DPORT is TRUE, the A operand should be restricted to 24 bit two's complement (and sign extended) to avoid over/underflow in the pre-add stage.
+Related violations: <none>
+
+REQP-1723#34 Warning
+DSP_Abus_sign_bit_restriction  
+zynq_dpu_system_i/DPUCZDX8G_0/inst/g_7d88779a.u_13a9931e/u_5f486510/u_fce954ef/u_b581cdc1/u_42480e0a/g_2c24a95e[11].g_1aeb70f6[0].g_4961f818[1].u_2182c70c/g_50106be6[1].g_9b47af81.u_15feb834/u_dsp/g_1beb2338.u_dsp48e1: When using the PreAdder and USE_DPORT is TRUE, the A operand should be restricted to 24 bit two's complement (and sign extended) to avoid over/underflow in the pre-add stage.
+Related violations: <none>
+
+REQP-1723#35 Warning
+DSP_Abus_sign_bit_restriction  
+zynq_dpu_system_i/DPUCZDX8G_0/inst/g_7d88779a.u_13a9931e/u_5f486510/u_fce954ef/u_b581cdc1/u_42480e0a/g_2c24a95e[11].g_1aeb70f6[0].g_4961f818[2].u_2182c70c/g_50106be6[0].g_9b47af81.u_15feb834/u_dsp/g_1beb2338.u_dsp48e1: When using the PreAdder and USE_DPORT is TRUE, the A operand should be restricted to 24 bit two's complement (and sign extended) to avoid over/underflow in the pre-add stage.
+Related violations: <none>
+
+REQP-1723#36 Warning
+DSP_Abus_sign_bit_restriction  
+zynq_dpu_system_i/DPUCZDX8G_0/inst/g_7d88779a.u_13a9931e/u_5f486510/u_fce954ef/u_b581cdc1/u_42480e0a/g_2c24a95e[11].g_1aeb70f6[0].g_4961f818[2].u_2182c70c/g_50106be6[1].g_9b47af81.u_15feb834/u_dsp/g_1beb2338.u_dsp48e1: When using the PreAdder and USE_DPORT is TRUE, the A operand should be restricted to 24 bit two's complement (and sign extended) to avoid over/underflow in the pre-add stage.
+Related violations: <none>
+
+REQP-1723#37 Warning
+DSP_Abus_sign_bit_restriction  
+zynq_dpu_system_i/DPUCZDX8G_0/inst/g_7d88779a.u_13a9931e/u_5f486510/u_fce954ef/u_b581cdc1/u_42480e0a/g_2c24a95e[11].g_1aeb70f6[0].g_4961f818[3].u_2182c70c/g_50106be6[0].g_9b47af81.u_15feb834/u_dsp/g_1beb2338.u_dsp48e1: When using the PreAdder and USE_DPORT is TRUE, the A operand should be restricted to 24 bit two's complement (and sign extended) to avoid over/underflow in the pre-add stage.
+Related violations: <none>
+
+REQP-1723#38 Warning
+DSP_Abus_sign_bit_restriction  
+zynq_dpu_system_i/DPUCZDX8G_0/inst/g_7d88779a.u_13a9931e/u_5f486510/u_fce954ef/u_b581cdc1/u_42480e0a/g_2c24a95e[11].g_1aeb70f6[0].g_4961f818[3].u_2182c70c/g_50106be6[1].g_9b47af81.u_15feb834/u_dsp/g_1beb2338.u_dsp48e1: When using the PreAdder and USE_DPORT is TRUE, the A operand should be restricted to 24 bit two's complement (and sign extended) to avoid over/underflow in the pre-add stage.
+Related violations: <none>
+
+REQP-1723#39 Warning
+DSP_Abus_sign_bit_restriction  
+zynq_dpu_system_i/DPUCZDX8G_0/inst/g_7d88779a.u_13a9931e/u_5f486510/u_fce954ef/u_b581cdc1/u_42480e0a/g_2c24a95e[11].g_1aeb70f6[0].g_4961f818[4].u_2182c70c/g_50106be6[0].g_9b47af81.u_15feb834/u_dsp/g_1beb2338.u_dsp48e1: When using the PreAdder and USE_DPORT is TRUE, the A operand should be restricted to 24 bit two's complement (and sign extended) to avoid over/underflow in the pre-add stage.
+Related violations: <none>
+
+REQP-1723#40 Warning
+DSP_Abus_sign_bit_restriction  
+zynq_dpu_system_i/DPUCZDX8G_0/inst/g_7d88779a.u_13a9931e/u_5f486510/u_fce954ef/u_b581cdc1/u_42480e0a/g_2c24a95e[11].g_1aeb70f6[0].g_4961f818[4].u_2182c70c/g_50106be6[1].g_9b47af81.u_15feb834/u_dsp/g_1beb2338.u_dsp48e1: When using the PreAdder and USE_DPORT is TRUE, the A operand should be restricted to 24 bit two's complement (and sign extended) to avoid over/underflow in the pre-add stage.
+Related violations: <none>
+
+REQP-1723#41 Warning
+DSP_Abus_sign_bit_restriction  
+zynq_dpu_system_i/DPUCZDX8G_0/inst/g_7d88779a.u_13a9931e/u_5f486510/u_fce954ef/u_b581cdc1/u_42480e0a/g_2c24a95e[11].g_1aeb70f6[0].g_4961f818[5].u_2182c70c/g_50106be6[0].g_9b47af81.u_15feb834/u_dsp/g_1beb2338.u_dsp48e1: When using the PreAdder and USE_DPORT is TRUE, the A operand should be restricted to 24 bit two's complement (and sign extended) to avoid over/underflow in the pre-add stage.
+Related violations: <none>
+
+REQP-1723#42 Warning
+DSP_Abus_sign_bit_restriction  
+zynq_dpu_system_i/DPUCZDX8G_0/inst/g_7d88779a.u_13a9931e/u_5f486510/u_fce954ef/u_b581cdc1/u_42480e0a/g_2c24a95e[11].g_1aeb70f6[0].g_4961f818[5].u_2182c70c/g_50106be6[1].g_9b47af81.u_15feb834/u_dsp/g_1beb2338.u_dsp48e1: When using the PreAdder and USE_DPORT is TRUE, the A operand should be restricted to 24 bit two's complement (and sign extended) to avoid over/underflow in the pre-add stage.
+Related violations: <none>
+
+REQP-1723#43 Warning
+DSP_Abus_sign_bit_restriction  
+zynq_dpu_system_i/DPUCZDX8G_0/inst/g_7d88779a.u_13a9931e/u_5f486510/u_fce954ef/u_b581cdc1/u_42480e0a/g_2c24a95e[1].g_1aeb70f6[0].g_4961f818[0].u_2182c70c/g_50106be6[0].g_9b47af81.u_15feb834/u_dsp/g_1beb2338.u_dsp48e1: When using the PreAdder and USE_DPORT is TRUE, the A operand should be restricted to 24 bit two's complement (and sign extended) to avoid over/underflow in the pre-add stage.
+Related violations: <none>
+
+REQP-1723#44 Warning
+DSP_Abus_sign_bit_restriction  
+zynq_dpu_system_i/DPUCZDX8G_0/inst/g_7d88779a.u_13a9931e/u_5f486510/u_fce954ef/u_b581cdc1/u_42480e0a/g_2c24a95e[1].g_1aeb70f6[0].g_4961f818[0].u_2182c70c/g_50106be6[1].g_9b47af81.u_15feb834/u_dsp/g_1beb2338.u_dsp48e1: When using the PreAdder and USE_DPORT is TRUE, the A operand should be restricted to 24 bit two's complement (and sign extended) to avoid over/underflow in the pre-add stage.
+Related violations: <none>
+
+REQP-1723#45 Warning
+DSP_Abus_sign_bit_restriction  
+zynq_dpu_system_i/DPUCZDX8G_0/inst/g_7d88779a.u_13a9931e/u_5f486510/u_fce954ef/u_b581cdc1/u_42480e0a/g_2c24a95e[1].g_1aeb70f6[0].g_4961f818[1].u_2182c70c/g_50106be6[0].g_9b47af81.u_15feb834/u_dsp/g_1beb2338.u_dsp48e1: When using the PreAdder and USE_DPORT is TRUE, the A operand should be restricted to 24 bit two's complement (and sign extended) to avoid over/underflow in the pre-add stage.
+Related violations: <none>
+
+REQP-1723#46 Warning
+DSP_Abus_sign_bit_restriction  
+zynq_dpu_system_i/DPUCZDX8G_0/inst/g_7d88779a.u_13a9931e/u_5f486510/u_fce954ef/u_b581cdc1/u_42480e0a/g_2c24a95e[1].g_1aeb70f6[0].g_4961f818[1].u_2182c70c/g_50106be6[1].g_9b47af81.u_15feb834/u_dsp/g_1beb2338.u_dsp48e1: When using the PreAdder and USE_DPORT is TRUE, the A operand should be restricted to 24 bit two's complement (and sign extended) to avoid over/underflow in the pre-add stage.
+Related violations: <none>
+
+REQP-1723#47 Warning
+DSP_Abus_sign_bit_restriction  
+zynq_dpu_system_i/DPUCZDX8G_0/inst/g_7d88779a.u_13a9931e/u_5f486510/u_fce954ef/u_b581cdc1/u_42480e0a/g_2c24a95e[1].g_1aeb70f6[0].g_4961f818[2].u_2182c70c/g_50106be6[0].g_9b47af81.u_15feb834/u_dsp/g_1beb2338.u_dsp48e1: When using the PreAdder and USE_DPORT is TRUE, the A operand should be restricted to 24 bit two's complement (and sign extended) to avoid over/underflow in the pre-add stage.
+Related violations: <none>
+
+REQP-1723#48 Warning
+DSP_Abus_sign_bit_restriction  
+zynq_dpu_system_i/DPUCZDX8G_0/inst/g_7d88779a.u_13a9931e/u_5f486510/u_fce954ef/u_b581cdc1/u_42480e0a/g_2c24a95e[1].g_1aeb70f6[0].g_4961f818[2].u_2182c70c/g_50106be6[1].g_9b47af81.u_15feb834/u_dsp/g_1beb2338.u_dsp48e1: When using the PreAdder and USE_DPORT is TRUE, the A operand should be restricted to 24 bit two's complement (and sign extended) to avoid over/underflow in the pre-add stage.
+Related violations: <none>
+
+REQP-1723#49 Warning
+DSP_Abus_sign_bit_restriction  
+zynq_dpu_system_i/DPUCZDX8G_0/inst/g_7d88779a.u_13a9931e/u_5f486510/u_fce954ef/u_b581cdc1/u_42480e0a/g_2c24a95e[1].g_1aeb70f6[0].g_4961f818[3].u_2182c70c/g_50106be6[0].g_9b47af81.u_15feb834/u_dsp/g_1beb2338.u_dsp48e1: When using the PreAdder and USE_DPORT is TRUE, the A operand should be restricted to 24 bit two's complement (and sign extended) to avoid over/underflow in the pre-add stage.
+Related violations: <none>
+
+REQP-1723#50 Warning
+DSP_Abus_sign_bit_restriction  
+zynq_dpu_system_i/DPUCZDX8G_0/inst/g_7d88779a.u_13a9931e/u_5f486510/u_fce954ef/u_b581cdc1/u_42480e0a/g_2c24a95e[1].g_1aeb70f6[0].g_4961f818[3].u_2182c70c/g_50106be6[1].g_9b47af81.u_15feb834/u_dsp/g_1beb2338.u_dsp48e1: When using the PreAdder and USE_DPORT is TRUE, the A operand should be restricted to 24 bit two's complement (and sign extended) to avoid over/underflow in the pre-add stage.
+Related violations: <none>
+
+REQP-1723#51 Warning
+DSP_Abus_sign_bit_restriction  
+zynq_dpu_system_i/DPUCZDX8G_0/inst/g_7d88779a.u_13a9931e/u_5f486510/u_fce954ef/u_b581cdc1/u_42480e0a/g_2c24a95e[1].g_1aeb70f6[0].g_4961f818[4].u_2182c70c/g_50106be6[0].g_9b47af81.u_15feb834/u_dsp/g_1beb2338.u_dsp48e1: When using the PreAdder and USE_DPORT is TRUE, the A operand should be restricted to 24 bit two's complement (and sign extended) to avoid over/underflow in the pre-add stage.
+Related violations: <none>
+
+REQP-1723#52 Warning
+DSP_Abus_sign_bit_restriction  
+zynq_dpu_system_i/DPUCZDX8G_0/inst/g_7d88779a.u_13a9931e/u_5f486510/u_fce954ef/u_b581cdc1/u_42480e0a/g_2c24a95e[1].g_1aeb70f6[0].g_4961f818[4].u_2182c70c/g_50106be6[1].g_9b47af81.u_15feb834/u_dsp/g_1beb2338.u_dsp48e1: When using the PreAdder and USE_DPORT is TRUE, the A operand should be restricted to 24 bit two's complement (and sign extended) to avoid over/underflow in the pre-add stage.
+Related violations: <none>
+
+REQP-1723#53 Warning
+DSP_Abus_sign_bit_restriction  
+zynq_dpu_system_i/DPUCZDX8G_0/inst/g_7d88779a.u_13a9931e/u_5f486510/u_fce954ef/u_b581cdc1/u_42480e0a/g_2c24a95e[1].g_1aeb70f6[0].g_4961f818[5].u_2182c70c/g_50106be6[0].g_9b47af81.u_15feb834/u_dsp/g_1beb2338.u_dsp48e1: When using the PreAdder and USE_DPORT is TRUE, the A operand should be restricted to 24 bit two's complement (and sign extended) to avoid over/underflow in the pre-add stage.
+Related violations: <none>
+
+REQP-1723#54 Warning
+DSP_Abus_sign_bit_restriction  
+zynq_dpu_system_i/DPUCZDX8G_0/inst/g_7d88779a.u_13a9931e/u_5f486510/u_fce954ef/u_b581cdc1/u_42480e0a/g_2c24a95e[1].g_1aeb70f6[0].g_4961f818[5].u_2182c70c/g_50106be6[1].g_9b47af81.u_15feb834/u_dsp/g_1beb2338.u_dsp48e1: When using the PreAdder and USE_DPORT is TRUE, the A operand should be restricted to 24 bit two's complement (and sign extended) to avoid over/underflow in the pre-add stage.
+Related violations: <none>
+
+REQP-1723#55 Warning
+DSP_Abus_sign_bit_restriction  
+zynq_dpu_system_i/DPUCZDX8G_0/inst/g_7d88779a.u_13a9931e/u_5f486510/u_fce954ef/u_b581cdc1/u_42480e0a/g_2c24a95e[2].g_1aeb70f6[0].g_4961f818[0].u_2182c70c/g_50106be6[0].g_9b47af81.u_15feb834/u_dsp/g_1beb2338.u_dsp48e1: When using the PreAdder and USE_DPORT is TRUE, the A operand should be restricted to 24 bit two's complement (and sign extended) to avoid over/underflow in the pre-add stage.
+Related violations: <none>
+
+REQP-1723#56 Warning
+DSP_Abus_sign_bit_restriction  
+zynq_dpu_system_i/DPUCZDX8G_0/inst/g_7d88779a.u_13a9931e/u_5f486510/u_fce954ef/u_b581cdc1/u_42480e0a/g_2c24a95e[2].g_1aeb70f6[0].g_4961f818[0].u_2182c70c/g_50106be6[1].g_9b47af81.u_15feb834/u_dsp/g_1beb2338.u_dsp48e1: When using the PreAdder and USE_DPORT is TRUE, the A operand should be restricted to 24 bit two's complement (and sign extended) to avoid over/underflow in the pre-add stage.
+Related violations: <none>
+
+REQP-1723#57 Warning
+DSP_Abus_sign_bit_restriction  
+zynq_dpu_system_i/DPUCZDX8G_0/inst/g_7d88779a.u_13a9931e/u_5f486510/u_fce954ef/u_b581cdc1/u_42480e0a/g_2c24a95e[2].g_1aeb70f6[0].g_4961f818[1].u_2182c70c/g_50106be6[0].g_9b47af81.u_15feb834/u_dsp/g_1beb2338.u_dsp48e1: When using the PreAdder and USE_DPORT is TRUE, the A operand should be restricted to 24 bit two's complement (and sign extended) to avoid over/underflow in the pre-add stage.
+Related violations: <none>
+
+REQP-1723#58 Warning
+DSP_Abus_sign_bit_restriction  
+zynq_dpu_system_i/DPUCZDX8G_0/inst/g_7d88779a.u_13a9931e/u_5f486510/u_fce954ef/u_b581cdc1/u_42480e0a/g_2c24a95e[2].g_1aeb70f6[0].g_4961f818[1].u_2182c70c/g_50106be6[1].g_9b47af81.u_15feb834/u_dsp/g_1beb2338.u_dsp48e1: When using the PreAdder and USE_DPORT is TRUE, the A operand should be restricted to 24 bit two's complement (and sign extended) to avoid over/underflow in the pre-add stage.
+Related violations: <none>
+
+REQP-1723#59 Warning
+DSP_Abus_sign_bit_restriction  
+zynq_dpu_system_i/DPUCZDX8G_0/inst/g_7d88779a.u_13a9931e/u_5f486510/u_fce954ef/u_b581cdc1/u_42480e0a/g_2c24a95e[2].g_1aeb70f6[0].g_4961f818[2].u_2182c70c/g_50106be6[0].g_9b47af81.u_15feb834/u_dsp/g_1beb2338.u_dsp48e1: When using the PreAdder and USE_DPORT is TRUE, the A operand should be restricted to 24 bit two's complement (and sign extended) to avoid over/underflow in the pre-add stage.
+Related violations: <none>
+
+REQP-1723#60 Warning
+DSP_Abus_sign_bit_restriction  
+zynq_dpu_system_i/DPUCZDX8G_0/inst/g_7d88779a.u_13a9931e/u_5f486510/u_fce954ef/u_b581cdc1/u_42480e0a/g_2c24a95e[2].g_1aeb70f6[0].g_4961f818[2].u_2182c70c/g_50106be6[1].g_9b47af81.u_15feb834/u_dsp/g_1beb2338.u_dsp48e1: When using the PreAdder and USE_DPORT is TRUE, the A operand should be restricted to 24 bit two's complement (and sign extended) to avoid over/underflow in the pre-add stage.
+Related violations: <none>
+
+REQP-1723#61 Warning
+DSP_Abus_sign_bit_restriction  
+zynq_dpu_system_i/DPUCZDX8G_0/inst/g_7d88779a.u_13a9931e/u_5f486510/u_fce954ef/u_b581cdc1/u_42480e0a/g_2c24a95e[2].g_1aeb70f6[0].g_4961f818[3].u_2182c70c/g_50106be6[0].g_9b47af81.u_15feb834/u_dsp/g_1beb2338.u_dsp48e1: When using the PreAdder and USE_DPORT is TRUE, the A operand should be restricted to 24 bit two's complement (and sign extended) to avoid over/underflow in the pre-add stage.
+Related violations: <none>
+
+REQP-1723#62 Warning
+DSP_Abus_sign_bit_restriction  
+zynq_dpu_system_i/DPUCZDX8G_0/inst/g_7d88779a.u_13a9931e/u_5f486510/u_fce954ef/u_b581cdc1/u_42480e0a/g_2c24a95e[2].g_1aeb70f6[0].g_4961f818[3].u_2182c70c/g_50106be6[1].g_9b47af81.u_15feb834/u_dsp/g_1beb2338.u_dsp48e1: When using the PreAdder and USE_DPORT is TRUE, the A operand should be restricted to 24 bit two's complement (and sign extended) to avoid over/underflow in the pre-add stage.
+Related violations: <none>
+
+REQP-1723#63 Warning
+DSP_Abus_sign_bit_restriction  
+zynq_dpu_system_i/DPUCZDX8G_0/inst/g_7d88779a.u_13a9931e/u_5f486510/u_fce954ef/u_b581cdc1/u_42480e0a/g_2c24a95e[2].g_1aeb70f6[0].g_4961f818[4].u_2182c70c/g_50106be6[0].g_9b47af81.u_15feb834/u_dsp/g_1beb2338.u_dsp48e1: When using the PreAdder and USE_DPORT is TRUE, the A operand should be restricted to 24 bit two's complement (and sign extended) to avoid over/underflow in the pre-add stage.
+Related violations: <none>
+
+REQP-1723#64 Warning
+DSP_Abus_sign_bit_restriction  
+zynq_dpu_system_i/DPUCZDX8G_0/inst/g_7d88779a.u_13a9931e/u_5f486510/u_fce954ef/u_b581cdc1/u_42480e0a/g_2c24a95e[2].g_1aeb70f6[0].g_4961f818[4].u_2182c70c/g_50106be6[1].g_9b47af81.u_15feb834/u_dsp/g_1beb2338.u_dsp48e1: When using the PreAdder and USE_DPORT is TRUE, the A operand should be restricted to 24 bit two's complement (and sign extended) to avoid over/underflow in the pre-add stage.
+Related violations: <none>
+
+REQP-1723#65 Warning
+DSP_Abus_sign_bit_restriction  
+zynq_dpu_system_i/DPUCZDX8G_0/inst/g_7d88779a.u_13a9931e/u_5f486510/u_fce954ef/u_b581cdc1/u_42480e0a/g_2c24a95e[2].g_1aeb70f6[0].g_4961f818[5].u_2182c70c/g_50106be6[0].g_9b47af81.u_15feb834/u_dsp/g_1beb2338.u_dsp48e1: When using the PreAdder and USE_DPORT is TRUE, the A operand should be restricted to 24 bit two's complement (and sign extended) to avoid over/underflow in the pre-add stage.
+Related violations: <none>
+
+REQP-1723#66 Warning
+DSP_Abus_sign_bit_restriction  
+zynq_dpu_system_i/DPUCZDX8G_0/inst/g_7d88779a.u_13a9931e/u_5f486510/u_fce954ef/u_b581cdc1/u_42480e0a/g_2c24a95e[2].g_1aeb70f6[0].g_4961f818[5].u_2182c70c/g_50106be6[1].g_9b47af81.u_15feb834/u_dsp/g_1beb2338.u_dsp48e1: When using the PreAdder and USE_DPORT is TRUE, the A operand should be restricted to 24 bit two's complement (and sign extended) to avoid over/underflow in the pre-add stage.
+Related violations: <none>
+
+REQP-1723#67 Warning
+DSP_Abus_sign_bit_restriction  
+zynq_dpu_system_i/DPUCZDX8G_0/inst/g_7d88779a.u_13a9931e/u_5f486510/u_fce954ef/u_b581cdc1/u_42480e0a/g_2c24a95e[3].g_1aeb70f6[0].g_4961f818[0].u_2182c70c/g_50106be6[0].g_9b47af81.u_15feb834/u_dsp/g_1beb2338.u_dsp48e1: When using the PreAdder and USE_DPORT is TRUE, the A operand should be restricted to 24 bit two's complement (and sign extended) to avoid over/underflow in the pre-add stage.
+Related violations: <none>
+
+REQP-1723#68 Warning
+DSP_Abus_sign_bit_restriction  
+zynq_dpu_system_i/DPUCZDX8G_0/inst/g_7d88779a.u_13a9931e/u_5f486510/u_fce954ef/u_b581cdc1/u_42480e0a/g_2c24a95e[3].g_1aeb70f6[0].g_4961f818[0].u_2182c70c/g_50106be6[1].g_9b47af81.u_15feb834/u_dsp/g_1beb2338.u_dsp48e1: When using the PreAdder and USE_DPORT is TRUE, the A operand should be restricted to 24 bit two's complement (and sign extended) to avoid over/underflow in the pre-add stage.
+Related violations: <none>
+
+REQP-1723#69 Warning
+DSP_Abus_sign_bit_restriction  
+zynq_dpu_system_i/DPUCZDX8G_0/inst/g_7d88779a.u_13a9931e/u_5f486510/u_fce954ef/u_b581cdc1/u_42480e0a/g_2c24a95e[3].g_1aeb70f6[0].g_4961f818[1].u_2182c70c/g_50106be6[0].g_9b47af81.u_15feb834/u_dsp/g_1beb2338.u_dsp48e1: When using the PreAdder and USE_DPORT is TRUE, the A operand should be restricted to 24 bit two's complement (and sign extended) to avoid over/underflow in the pre-add stage.
+Related violations: <none>
+
+REQP-1723#70 Warning
+DSP_Abus_sign_bit_restriction  
+zynq_dpu_system_i/DPUCZDX8G_0/inst/g_7d88779a.u_13a9931e/u_5f486510/u_fce954ef/u_b581cdc1/u_42480e0a/g_2c24a95e[3].g_1aeb70f6[0].g_4961f818[1].u_2182c70c/g_50106be6[1].g_9b47af81.u_15feb834/u_dsp/g_1beb2338.u_dsp48e1: When using the PreAdder and USE_DPORT is TRUE, the A operand should be restricted to 24 bit two's complement (and sign extended) to avoid over/underflow in the pre-add stage.
+Related violations: <none>
+
+REQP-1723#71 Warning
+DSP_Abus_sign_bit_restriction  
+zynq_dpu_system_i/DPUCZDX8G_0/inst/g_7d88779a.u_13a9931e/u_5f486510/u_fce954ef/u_b581cdc1/u_42480e0a/g_2c24a95e[3].g_1aeb70f6[0].g_4961f818[2].u_2182c70c/g_50106be6[0].g_9b47af81.u_15feb834/u_dsp/g_1beb2338.u_dsp48e1: When using the PreAdder and USE_DPORT is TRUE, the A operand should be restricted to 24 bit two's complement (and sign extended) to avoid over/underflow in the pre-add stage.
+Related violations: <none>
+
+REQP-1723#72 Warning
+DSP_Abus_sign_bit_restriction  
+zynq_dpu_system_i/DPUCZDX8G_0/inst/g_7d88779a.u_13a9931e/u_5f486510/u_fce954ef/u_b581cdc1/u_42480e0a/g_2c24a95e[3].g_1aeb70f6[0].g_4961f818[2].u_2182c70c/g_50106be6[1].g_9b47af81.u_15feb834/u_dsp/g_1beb2338.u_dsp48e1: When using the PreAdder and USE_DPORT is TRUE, the A operand should be restricted to 24 bit two's complement (and sign extended) to avoid over/underflow in the pre-add stage.
+Related violations: <none>
+
+REQP-1723#73 Warning
+DSP_Abus_sign_bit_restriction  
+zynq_dpu_system_i/DPUCZDX8G_0/inst/g_7d88779a.u_13a9931e/u_5f486510/u_fce954ef/u_b581cdc1/u_42480e0a/g_2c24a95e[3].g_1aeb70f6[0].g_4961f818[3].u_2182c70c/g_50106be6[0].g_9b47af81.u_15feb834/u_dsp/g_1beb2338.u_dsp48e1: When using the PreAdder and USE_DPORT is TRUE, the A operand should be restricted to 24 bit two's complement (and sign extended) to avoid over/underflow in the pre-add stage.
+Related violations: <none>
+
+REQP-1723#74 Warning
+DSP_Abus_sign_bit_restriction  
+zynq_dpu_system_i/DPUCZDX8G_0/inst/g_7d88779a.u_13a9931e/u_5f486510/u_fce954ef/u_b581cdc1/u_42480e0a/g_2c24a95e[3].g_1aeb70f6[0].g_4961f818[3].u_2182c70c/g_50106be6[1].g_9b47af81.u_15feb834/u_dsp/g_1beb2338.u_dsp48e1: When using the PreAdder and USE_DPORT is TRUE, the A operand should be restricted to 24 bit two's complement (and sign extended) to avoid over/underflow in the pre-add stage.
+Related violations: <none>
+
+REQP-1723#75 Warning
+DSP_Abus_sign_bit_restriction  
+zynq_dpu_system_i/DPUCZDX8G_0/inst/g_7d88779a.u_13a9931e/u_5f486510/u_fce954ef/u_b581cdc1/u_42480e0a/g_2c24a95e[3].g_1aeb70f6[0].g_4961f818[4].u_2182c70c/g_50106be6[0].g_9b47af81.u_15feb834/u_dsp/g_1beb2338.u_dsp48e1: When using the PreAdder and USE_DPORT is TRUE, the A operand should be restricted to 24 bit two's complement (and sign extended) to avoid over/underflow in the pre-add stage.
+Related violations: <none>
+
+REQP-1723#76 Warning
+DSP_Abus_sign_bit_restriction  
+zynq_dpu_system_i/DPUCZDX8G_0/inst/g_7d88779a.u_13a9931e/u_5f486510/u_fce954ef/u_b581cdc1/u_42480e0a/g_2c24a95e[3].g_1aeb70f6[0].g_4961f818[4].u_2182c70c/g_50106be6[1].g_9b47af81.u_15feb834/u_dsp/g_1beb2338.u_dsp48e1: When using the PreAdder and USE_DPORT is TRUE, the A operand should be restricted to 24 bit two's complement (and sign extended) to avoid over/underflow in the pre-add stage.
+Related violations: <none>
+
+REQP-1723#77 Warning
+DSP_Abus_sign_bit_restriction  
+zynq_dpu_system_i/DPUCZDX8G_0/inst/g_7d88779a.u_13a9931e/u_5f486510/u_fce954ef/u_b581cdc1/u_42480e0a/g_2c24a95e[3].g_1aeb70f6[0].g_4961f818[5].u_2182c70c/g_50106be6[0].g_9b47af81.u_15feb834/u_dsp/g_1beb2338.u_dsp48e1: When using the PreAdder and USE_DPORT is TRUE, the A operand should be restricted to 24 bit two's complement (and sign extended) to avoid over/underflow in the pre-add stage.
+Related violations: <none>
+
+REQP-1723#78 Warning
+DSP_Abus_sign_bit_restriction  
+zynq_dpu_system_i/DPUCZDX8G_0/inst/g_7d88779a.u_13a9931e/u_5f486510/u_fce954ef/u_b581cdc1/u_42480e0a/g_2c24a95e[3].g_1aeb70f6[0].g_4961f818[5].u_2182c70c/g_50106be6[1].g_9b47af81.u_15feb834/u_dsp/g_1beb2338.u_dsp48e1: When using the PreAdder and USE_DPORT is TRUE, the A operand should be restricted to 24 bit two's complement (and sign extended) to avoid over/underflow in the pre-add stage.
+Related violations: <none>
+
+REQP-1723#79 Warning
+DSP_Abus_sign_bit_restriction  
+zynq_dpu_system_i/DPUCZDX8G_0/inst/g_7d88779a.u_13a9931e/u_5f486510/u_fce954ef/u_b581cdc1/u_42480e0a/g_2c24a95e[4].g_1aeb70f6[0].g_4961f818[0].u_2182c70c/g_50106be6[0].g_9b47af81.u_15feb834/u_dsp/g_1beb2338.u_dsp48e1: When using the PreAdder and USE_DPORT is TRUE, the A operand should be restricted to 24 bit two's complement (and sign extended) to avoid over/underflow in the pre-add stage.
+Related violations: <none>
+
+REQP-1723#80 Warning
+DSP_Abus_sign_bit_restriction  
+zynq_dpu_system_i/DPUCZDX8G_0/inst/g_7d88779a.u_13a9931e/u_5f486510/u_fce954ef/u_b581cdc1/u_42480e0a/g_2c24a95e[4].g_1aeb70f6[0].g_4961f818[0].u_2182c70c/g_50106be6[1].g_9b47af81.u_15feb834/u_dsp/g_1beb2338.u_dsp48e1: When using the PreAdder and USE_DPORT is TRUE, the A operand should be restricted to 24 bit two's complement (and sign extended) to avoid over/underflow in the pre-add stage.
+Related violations: <none>
+
+REQP-1723#81 Warning
+DSP_Abus_sign_bit_restriction  
+zynq_dpu_system_i/DPUCZDX8G_0/inst/g_7d88779a.u_13a9931e/u_5f486510/u_fce954ef/u_b581cdc1/u_42480e0a/g_2c24a95e[4].g_1aeb70f6[0].g_4961f818[1].u_2182c70c/g_50106be6[0].g_9b47af81.u_15feb834/u_dsp/g_1beb2338.u_dsp48e1: When using the PreAdder and USE_DPORT is TRUE, the A operand should be restricted to 24 bit two's complement (and sign extended) to avoid over/underflow in the pre-add stage.
+Related violations: <none>
+
+REQP-1723#82 Warning
+DSP_Abus_sign_bit_restriction  
+zynq_dpu_system_i/DPUCZDX8G_0/inst/g_7d88779a.u_13a9931e/u_5f486510/u_fce954ef/u_b581cdc1/u_42480e0a/g_2c24a95e[4].g_1aeb70f6[0].g_4961f818[1].u_2182c70c/g_50106be6[1].g_9b47af81.u_15feb834/u_dsp/g_1beb2338.u_dsp48e1: When using the PreAdder and USE_DPORT is TRUE, the A operand should be restricted to 24 bit two's complement (and sign extended) to avoid over/underflow in the pre-add stage.
+Related violations: <none>
+
+REQP-1723#83 Warning
+DSP_Abus_sign_bit_restriction  
+zynq_dpu_system_i/DPUCZDX8G_0/inst/g_7d88779a.u_13a9931e/u_5f486510/u_fce954ef/u_b581cdc1/u_42480e0a/g_2c24a95e[4].g_1aeb70f6[0].g_4961f818[2].u_2182c70c/g_50106be6[0].g_9b47af81.u_15feb834/u_dsp/g_1beb2338.u_dsp48e1: When using the PreAdder and USE_DPORT is TRUE, the A operand should be restricted to 24 bit two's complement (and sign extended) to avoid over/underflow in the pre-add stage.
+Related violations: <none>
+
+REQP-1723#84 Warning
+DSP_Abus_sign_bit_restriction  
+zynq_dpu_system_i/DPUCZDX8G_0/inst/g_7d88779a.u_13a9931e/u_5f486510/u_fce954ef/u_b581cdc1/u_42480e0a/g_2c24a95e[4].g_1aeb70f6[0].g_4961f818[2].u_2182c70c/g_50106be6[1].g_9b47af81.u_15feb834/u_dsp/g_1beb2338.u_dsp48e1: When using the PreAdder and USE_DPORT is TRUE, the A operand should be restricted to 24 bit two's complement (and sign extended) to avoid over/underflow in the pre-add stage.
+Related violations: <none>
+
+REQP-1723#85 Warning
+DSP_Abus_sign_bit_restriction  
+zynq_dpu_system_i/DPUCZDX8G_0/inst/g_7d88779a.u_13a9931e/u_5f486510/u_fce954ef/u_b581cdc1/u_42480e0a/g_2c24a95e[4].g_1aeb70f6[0].g_4961f818[3].u_2182c70c/g_50106be6[0].g_9b47af81.u_15feb834/u_dsp/g_1beb2338.u_dsp48e1: When using the PreAdder and USE_DPORT is TRUE, the A operand should be restricted to 24 bit two's complement (and sign extended) to avoid over/underflow in the pre-add stage.
+Related violations: <none>
+
+REQP-1723#86 Warning
+DSP_Abus_sign_bit_restriction  
+zynq_dpu_system_i/DPUCZDX8G_0/inst/g_7d88779a.u_13a9931e/u_5f486510/u_fce954ef/u_b581cdc1/u_42480e0a/g_2c24a95e[4].g_1aeb70f6[0].g_4961f818[3].u_2182c70c/g_50106be6[1].g_9b47af81.u_15feb834/u_dsp/g_1beb2338.u_dsp48e1: When using the PreAdder and USE_DPORT is TRUE, the A operand should be restricted to 24 bit two's complement (and sign extended) to avoid over/underflow in the pre-add stage.
+Related violations: <none>
+
+REQP-1723#87 Warning
+DSP_Abus_sign_bit_restriction  
+zynq_dpu_system_i/DPUCZDX8G_0/inst/g_7d88779a.u_13a9931e/u_5f486510/u_fce954ef/u_b581cdc1/u_42480e0a/g_2c24a95e[4].g_1aeb70f6[0].g_4961f818[4].u_2182c70c/g_50106be6[0].g_9b47af81.u_15feb834/u_dsp/g_1beb2338.u_dsp48e1: When using the PreAdder and USE_DPORT is TRUE, the A operand should be restricted to 24 bit two's complement (and sign extended) to avoid over/underflow in the pre-add stage.
+Related violations: <none>
+
+REQP-1723#88 Warning
+DSP_Abus_sign_bit_restriction  
+zynq_dpu_system_i/DPUCZDX8G_0/inst/g_7d88779a.u_13a9931e/u_5f486510/u_fce954ef/u_b581cdc1/u_42480e0a/g_2c24a95e[4].g_1aeb70f6[0].g_4961f818[4].u_2182c70c/g_50106be6[1].g_9b47af81.u_15feb834/u_dsp/g_1beb2338.u_dsp48e1: When using the PreAdder and USE_DPORT is TRUE, the A operand should be restricted to 24 bit two's complement (and sign extended) to avoid over/underflow in the pre-add stage.
+Related violations: <none>
+
+REQP-1723#89 Warning
+DSP_Abus_sign_bit_restriction  
+zynq_dpu_system_i/DPUCZDX8G_0/inst/g_7d88779a.u_13a9931e/u_5f486510/u_fce954ef/u_b581cdc1/u_42480e0a/g_2c24a95e[4].g_1aeb70f6[0].g_4961f818[5].u_2182c70c/g_50106be6[0].g_9b47af81.u_15feb834/u_dsp/g_1beb2338.u_dsp48e1: When using the PreAdder and USE_DPORT is TRUE, the A operand should be restricted to 24 bit two's complement (and sign extended) to avoid over/underflow in the pre-add stage.
+Related violations: <none>
+
+REQP-1723#90 Warning
+DSP_Abus_sign_bit_restriction  
+zynq_dpu_system_i/DPUCZDX8G_0/inst/g_7d88779a.u_13a9931e/u_5f486510/u_fce954ef/u_b581cdc1/u_42480e0a/g_2c24a95e[4].g_1aeb70f6[0].g_4961f818[5].u_2182c70c/g_50106be6[1].g_9b47af81.u_15feb834/u_dsp/g_1beb2338.u_dsp48e1: When using the PreAdder and USE_DPORT is TRUE, the A operand should be restricted to 24 bit two's complement (and sign extended) to avoid over/underflow in the pre-add stage.
+Related violations: <none>
+
+REQP-1723#91 Warning
+DSP_Abus_sign_bit_restriction  
+zynq_dpu_system_i/DPUCZDX8G_0/inst/g_7d88779a.u_13a9931e/u_5f486510/u_fce954ef/u_b581cdc1/u_42480e0a/g_2c24a95e[5].g_1aeb70f6[0].g_4961f818[0].u_2182c70c/g_50106be6[0].g_9b47af81.u_15feb834/u_dsp/g_1beb2338.u_dsp48e1: When using the PreAdder and USE_DPORT is TRUE, the A operand should be restricted to 24 bit two's complement (and sign extended) to avoid over/underflow in the pre-add stage.
+Related violations: <none>
+
+REQP-1723#92 Warning
+DSP_Abus_sign_bit_restriction  
+zynq_dpu_system_i/DPUCZDX8G_0/inst/g_7d88779a.u_13a9931e/u_5f486510/u_fce954ef/u_b581cdc1/u_42480e0a/g_2c24a95e[5].g_1aeb70f6[0].g_4961f818[0].u_2182c70c/g_50106be6[1].g_9b47af81.u_15feb834/u_dsp/g_1beb2338.u_dsp48e1: When using the PreAdder and USE_DPORT is TRUE, the A operand should be restricted to 24 bit two's complement (and sign extended) to avoid over/underflow in the pre-add stage.
+Related violations: <none>
+
+REQP-1723#93 Warning
+DSP_Abus_sign_bit_restriction  
+zynq_dpu_system_i/DPUCZDX8G_0/inst/g_7d88779a.u_13a9931e/u_5f486510/u_fce954ef/u_b581cdc1/u_42480e0a/g_2c24a95e[5].g_1aeb70f6[0].g_4961f818[1].u_2182c70c/g_50106be6[0].g_9b47af81.u_15feb834/u_dsp/g_1beb2338.u_dsp48e1: When using the PreAdder and USE_DPORT is TRUE, the A operand should be restricted to 24 bit two's complement (and sign extended) to avoid over/underflow in the pre-add stage.
+Related violations: <none>
+
+REQP-1723#94 Warning
+DSP_Abus_sign_bit_restriction  
+zynq_dpu_system_i/DPUCZDX8G_0/inst/g_7d88779a.u_13a9931e/u_5f486510/u_fce954ef/u_b581cdc1/u_42480e0a/g_2c24a95e[5].g_1aeb70f6[0].g_4961f818[1].u_2182c70c/g_50106be6[1].g_9b47af81.u_15feb834/u_dsp/g_1beb2338.u_dsp48e1: When using the PreAdder and USE_DPORT is TRUE, the A operand should be restricted to 24 bit two's complement (and sign extended) to avoid over/underflow in the pre-add stage.
+Related violations: <none>
+
+REQP-1723#95 Warning
+DSP_Abus_sign_bit_restriction  
+zynq_dpu_system_i/DPUCZDX8G_0/inst/g_7d88779a.u_13a9931e/u_5f486510/u_fce954ef/u_b581cdc1/u_42480e0a/g_2c24a95e[5].g_1aeb70f6[0].g_4961f818[2].u_2182c70c/g_50106be6[0].g_9b47af81.u_15feb834/u_dsp/g_1beb2338.u_dsp48e1: When using the PreAdder and USE_DPORT is TRUE, the A operand should be restricted to 24 bit two's complement (and sign extended) to avoid over/underflow in the pre-add stage.
+Related violations: <none>
+
+REQP-1723#96 Warning
+DSP_Abus_sign_bit_restriction  
+zynq_dpu_system_i/DPUCZDX8G_0/inst/g_7d88779a.u_13a9931e/u_5f486510/u_fce954ef/u_b581cdc1/u_42480e0a/g_2c24a95e[5].g_1aeb70f6[0].g_4961f818[2].u_2182c70c/g_50106be6[1].g_9b47af81.u_15feb834/u_dsp/g_1beb2338.u_dsp48e1: When using the PreAdder and USE_DPORT is TRUE, the A operand should be restricted to 24 bit two's complement (and sign extended) to avoid over/underflow in the pre-add stage.
+Related violations: <none>
+
+REQP-1723#97 Warning
+DSP_Abus_sign_bit_restriction  
+zynq_dpu_system_i/DPUCZDX8G_0/inst/g_7d88779a.u_13a9931e/u_5f486510/u_fce954ef/u_b581cdc1/u_42480e0a/g_2c24a95e[5].g_1aeb70f6[0].g_4961f818[3].u_2182c70c/g_50106be6[0].g_9b47af81.u_15feb834/u_dsp/g_1beb2338.u_dsp48e1: When using the PreAdder and USE_DPORT is TRUE, the A operand should be restricted to 24 bit two's complement (and sign extended) to avoid over/underflow in the pre-add stage.
+Related violations: <none>
+
+REQP-1723#98 Warning
+DSP_Abus_sign_bit_restriction  
+zynq_dpu_system_i/DPUCZDX8G_0/inst/g_7d88779a.u_13a9931e/u_5f486510/u_fce954ef/u_b581cdc1/u_42480e0a/g_2c24a95e[5].g_1aeb70f6[0].g_4961f818[3].u_2182c70c/g_50106be6[1].g_9b47af81.u_15feb834/u_dsp/g_1beb2338.u_dsp48e1: When using the PreAdder and USE_DPORT is TRUE, the A operand should be restricted to 24 bit two's complement (and sign extended) to avoid over/underflow in the pre-add stage.
+Related violations: <none>
+
+REQP-1723#99 Warning
+DSP_Abus_sign_bit_restriction  
+zynq_dpu_system_i/DPUCZDX8G_0/inst/g_7d88779a.u_13a9931e/u_5f486510/u_fce954ef/u_b581cdc1/u_42480e0a/g_2c24a95e[5].g_1aeb70f6[0].g_4961f818[4].u_2182c70c/g_50106be6[0].g_9b47af81.u_15feb834/u_dsp/g_1beb2338.u_dsp48e1: When using the PreAdder and USE_DPORT is TRUE, the A operand should be restricted to 24 bit two's complement (and sign extended) to avoid over/underflow in the pre-add stage.
+Related violations: <none>
+
+REQP-1723#100 Warning
+DSP_Abus_sign_bit_restriction  
+zynq_dpu_system_i/DPUCZDX8G_0/inst/g_7d88779a.u_13a9931e/u_5f486510/u_fce954ef/u_b581cdc1/u_42480e0a/g_2c24a95e[5].g_1aeb70f6[0].g_4961f818[4].u_2182c70c/g_50106be6[1].g_9b47af81.u_15feb834/u_dsp/g_1beb2338.u_dsp48e1: When using the PreAdder and USE_DPORT is TRUE, the A operand should be restricted to 24 bit two's complement (and sign extended) to avoid over/underflow in the pre-add stage.
+Related violations: <none>
+
+REQP-1723#101 Warning
+DSP_Abus_sign_bit_restriction  
+zynq_dpu_system_i/DPUCZDX8G_0/inst/g_7d88779a.u_13a9931e/u_5f486510/u_fce954ef/u_b581cdc1/u_42480e0a/g_2c24a95e[5].g_1aeb70f6[0].g_4961f818[5].u_2182c70c/g_50106be6[0].g_9b47af81.u_15feb834/u_dsp/g_1beb2338.u_dsp48e1: When using the PreAdder and USE_DPORT is TRUE, the A operand should be restricted to 24 bit two's complement (and sign extended) to avoid over/underflow in the pre-add stage.
+Related violations: <none>
+
+REQP-1723#102 Warning
+DSP_Abus_sign_bit_restriction  
+zynq_dpu_system_i/DPUCZDX8G_0/inst/g_7d88779a.u_13a9931e/u_5f486510/u_fce954ef/u_b581cdc1/u_42480e0a/g_2c24a95e[5].g_1aeb70f6[0].g_4961f818[5].u_2182c70c/g_50106be6[1].g_9b47af81.u_15feb834/u_dsp/g_1beb2338.u_dsp48e1: When using the PreAdder and USE_DPORT is TRUE, the A operand should be restricted to 24 bit two's complement (and sign extended) to avoid over/underflow in the pre-add stage.
+Related violations: <none>
+
+REQP-1723#103 Warning
+DSP_Abus_sign_bit_restriction  
+zynq_dpu_system_i/DPUCZDX8G_0/inst/g_7d88779a.u_13a9931e/u_5f486510/u_fce954ef/u_b581cdc1/u_42480e0a/g_2c24a95e[6].g_1aeb70f6[0].g_4961f818[0].u_2182c70c/g_50106be6[0].g_9b47af81.u_15feb834/u_dsp/g_1beb2338.u_dsp48e1: When using the PreAdder and USE_DPORT is TRUE, the A operand should be restricted to 24 bit two's complement (and sign extended) to avoid over/underflow in the pre-add stage.
+Related violations: <none>
+
+REQP-1723#104 Warning
+DSP_Abus_sign_bit_restriction  
+zynq_dpu_system_i/DPUCZDX8G_0/inst/g_7d88779a.u_13a9931e/u_5f486510/u_fce954ef/u_b581cdc1/u_42480e0a/g_2c24a95e[6].g_1aeb70f6[0].g_4961f818[0].u_2182c70c/g_50106be6[1].g_9b47af81.u_15feb834/u_dsp/g_1beb2338.u_dsp48e1: When using the PreAdder and USE_DPORT is TRUE, the A operand should be restricted to 24 bit two's complement (and sign extended) to avoid over/underflow in the pre-add stage.
+Related violations: <none>
+
+REQP-1723#105 Warning
+DSP_Abus_sign_bit_restriction  
+zynq_dpu_system_i/DPUCZDX8G_0/inst/g_7d88779a.u_13a9931e/u_5f486510/u_fce954ef/u_b581cdc1/u_42480e0a/g_2c24a95e[6].g_1aeb70f6[0].g_4961f818[1].u_2182c70c/g_50106be6[0].g_9b47af81.u_15feb834/u_dsp/g_1beb2338.u_dsp48e1: When using the PreAdder and USE_DPORT is TRUE, the A operand should be restricted to 24 bit two's complement (and sign extended) to avoid over/underflow in the pre-add stage.
+Related violations: <none>
+
+REQP-1723#106 Warning
+DSP_Abus_sign_bit_restriction  
+zynq_dpu_system_i/DPUCZDX8G_0/inst/g_7d88779a.u_13a9931e/u_5f486510/u_fce954ef/u_b581cdc1/u_42480e0a/g_2c24a95e[6].g_1aeb70f6[0].g_4961f818[1].u_2182c70c/g_50106be6[1].g_9b47af81.u_15feb834/u_dsp/g_1beb2338.u_dsp48e1: When using the PreAdder and USE_DPORT is TRUE, the A operand should be restricted to 24 bit two's complement (and sign extended) to avoid over/underflow in the pre-add stage.
+Related violations: <none>
+
+REQP-1723#107 Warning
+DSP_Abus_sign_bit_restriction  
+zynq_dpu_system_i/DPUCZDX8G_0/inst/g_7d88779a.u_13a9931e/u_5f486510/u_fce954ef/u_b581cdc1/u_42480e0a/g_2c24a95e[6].g_1aeb70f6[0].g_4961f818[2].u_2182c70c/g_50106be6[0].g_9b47af81.u_15feb834/u_dsp/g_1beb2338.u_dsp48e1: When using the PreAdder and USE_DPORT is TRUE, the A operand should be restricted to 24 bit two's complement (and sign extended) to avoid over/underflow in the pre-add stage.
+Related violations: <none>
+
+REQP-1723#108 Warning
+DSP_Abus_sign_bit_restriction  
+zynq_dpu_system_i/DPUCZDX8G_0/inst/g_7d88779a.u_13a9931e/u_5f486510/u_fce954ef/u_b581cdc1/u_42480e0a/g_2c24a95e[6].g_1aeb70f6[0].g_4961f818[2].u_2182c70c/g_50106be6[1].g_9b47af81.u_15feb834/u_dsp/g_1beb2338.u_dsp48e1: When using the PreAdder and USE_DPORT is TRUE, the A operand should be restricted to 24 bit two's complement (and sign extended) to avoid over/underflow in the pre-add stage.
+Related violations: <none>
+
+REQP-1723#109 Warning
+DSP_Abus_sign_bit_restriction  
+zynq_dpu_system_i/DPUCZDX8G_0/inst/g_7d88779a.u_13a9931e/u_5f486510/u_fce954ef/u_b581cdc1/u_42480e0a/g_2c24a95e[6].g_1aeb70f6[0].g_4961f818[3].u_2182c70c/g_50106be6[0].g_9b47af81.u_15feb834/u_dsp/g_1beb2338.u_dsp48e1: When using the PreAdder and USE_DPORT is TRUE, the A operand should be restricted to 24 bit two's complement (and sign extended) to avoid over/underflow in the pre-add stage.
+Related violations: <none>
+
+REQP-1723#110 Warning
+DSP_Abus_sign_bit_restriction  
+zynq_dpu_system_i/DPUCZDX8G_0/inst/g_7d88779a.u_13a9931e/u_5f486510/u_fce954ef/u_b581cdc1/u_42480e0a/g_2c24a95e[6].g_1aeb70f6[0].g_4961f818[3].u_2182c70c/g_50106be6[1].g_9b47af81.u_15feb834/u_dsp/g_1beb2338.u_dsp48e1: When using the PreAdder and USE_DPORT is TRUE, the A operand should be restricted to 24 bit two's complement (and sign extended) to avoid over/underflow in the pre-add stage.
+Related violations: <none>
+
+REQP-1723#111 Warning
+DSP_Abus_sign_bit_restriction  
+zynq_dpu_system_i/DPUCZDX8G_0/inst/g_7d88779a.u_13a9931e/u_5f486510/u_fce954ef/u_b581cdc1/u_42480e0a/g_2c24a95e[6].g_1aeb70f6[0].g_4961f818[4].u_2182c70c/g_50106be6[0].g_9b47af81.u_15feb834/u_dsp/g_1beb2338.u_dsp48e1: When using the PreAdder and USE_DPORT is TRUE, the A operand should be restricted to 24 bit two's complement (and sign extended) to avoid over/underflow in the pre-add stage.
+Related violations: <none>
+
+REQP-1723#112 Warning
+DSP_Abus_sign_bit_restriction  
+zynq_dpu_system_i/DPUCZDX8G_0/inst/g_7d88779a.u_13a9931e/u_5f486510/u_fce954ef/u_b581cdc1/u_42480e0a/g_2c24a95e[6].g_1aeb70f6[0].g_4961f818[4].u_2182c70c/g_50106be6[1].g_9b47af81.u_15feb834/u_dsp/g_1beb2338.u_dsp48e1: When using the PreAdder and USE_DPORT is TRUE, the A operand should be restricted to 24 bit two's complement (and sign extended) to avoid over/underflow in the pre-add stage.
+Related violations: <none>
+
+REQP-1723#113 Warning
+DSP_Abus_sign_bit_restriction  
+zynq_dpu_system_i/DPUCZDX8G_0/inst/g_7d88779a.u_13a9931e/u_5f486510/u_fce954ef/u_b581cdc1/u_42480e0a/g_2c24a95e[6].g_1aeb70f6[0].g_4961f818[5].u_2182c70c/g_50106be6[0].g_9b47af81.u_15feb834/u_dsp/g_1beb2338.u_dsp48e1: When using the PreAdder and USE_DPORT is TRUE, the A operand should be restricted to 24 bit two's complement (and sign extended) to avoid over/underflow in the pre-add stage.
+Related violations: <none>
+
+REQP-1723#114 Warning
+DSP_Abus_sign_bit_restriction  
+zynq_dpu_system_i/DPUCZDX8G_0/inst/g_7d88779a.u_13a9931e/u_5f486510/u_fce954ef/u_b581cdc1/u_42480e0a/g_2c24a95e[6].g_1aeb70f6[0].g_4961f818[5].u_2182c70c/g_50106be6[1].g_9b47af81.u_15feb834/u_dsp/g_1beb2338.u_dsp48e1: When using the PreAdder and USE_DPORT is TRUE, the A operand should be restricted to 24 bit two's complement (and sign extended) to avoid over/underflow in the pre-add stage.
+Related violations: <none>
+
+REQP-1723#115 Warning
+DSP_Abus_sign_bit_restriction  
+zynq_dpu_system_i/DPUCZDX8G_0/inst/g_7d88779a.u_13a9931e/u_5f486510/u_fce954ef/u_b581cdc1/u_42480e0a/g_2c24a95e[7].g_1aeb70f6[0].g_4961f818[0].u_2182c70c/g_50106be6[0].g_9b47af81.u_15feb834/u_dsp/g_1beb2338.u_dsp48e1: When using the PreAdder and USE_DPORT is TRUE, the A operand should be restricted to 24 bit two's complement (and sign extended) to avoid over/underflow in the pre-add stage.
+Related violations: <none>
+
+REQP-1723#116 Warning
+DSP_Abus_sign_bit_restriction  
+zynq_dpu_system_i/DPUCZDX8G_0/inst/g_7d88779a.u_13a9931e/u_5f486510/u_fce954ef/u_b581cdc1/u_42480e0a/g_2c24a95e[7].g_1aeb70f6[0].g_4961f818[0].u_2182c70c/g_50106be6[1].g_9b47af81.u_15feb834/u_dsp/g_1beb2338.u_dsp48e1: When using the PreAdder and USE_DPORT is TRUE, the A operand should be restricted to 24 bit two's complement (and sign extended) to avoid over/underflow in the pre-add stage.
+Related violations: <none>
+
+REQP-1723#117 Warning
+DSP_Abus_sign_bit_restriction  
+zynq_dpu_system_i/DPUCZDX8G_0/inst/g_7d88779a.u_13a9931e/u_5f486510/u_fce954ef/u_b581cdc1/u_42480e0a/g_2c24a95e[7].g_1aeb70f6[0].g_4961f818[1].u_2182c70c/g_50106be6[0].g_9b47af81.u_15feb834/u_dsp/g_1beb2338.u_dsp48e1: When using the PreAdder and USE_DPORT is TRUE, the A operand should be restricted to 24 bit two's complement (and sign extended) to avoid over/underflow in the pre-add stage.
+Related violations: <none>
+
+REQP-1723#118 Warning
+DSP_Abus_sign_bit_restriction  
+zynq_dpu_system_i/DPUCZDX8G_0/inst/g_7d88779a.u_13a9931e/u_5f486510/u_fce954ef/u_b581cdc1/u_42480e0a/g_2c24a95e[7].g_1aeb70f6[0].g_4961f818[1].u_2182c70c/g_50106be6[1].g_9b47af81.u_15feb834/u_dsp/g_1beb2338.u_dsp48e1: When using the PreAdder and USE_DPORT is TRUE, the A operand should be restricted to 24 bit two's complement (and sign extended) to avoid over/underflow in the pre-add stage.
+Related violations: <none>
+
+REQP-1723#119 Warning
+DSP_Abus_sign_bit_restriction  
+zynq_dpu_system_i/DPUCZDX8G_0/inst/g_7d88779a.u_13a9931e/u_5f486510/u_fce954ef/u_b581cdc1/u_42480e0a/g_2c24a95e[7].g_1aeb70f6[0].g_4961f818[2].u_2182c70c/g_50106be6[0].g_9b47af81.u_15feb834/u_dsp/g_1beb2338.u_dsp48e1: When using the PreAdder and USE_DPORT is TRUE, the A operand should be restricted to 24 bit two's complement (and sign extended) to avoid over/underflow in the pre-add stage.
+Related violations: <none>
+
+REQP-1723#120 Warning
+DSP_Abus_sign_bit_restriction  
+zynq_dpu_system_i/DPUCZDX8G_0/inst/g_7d88779a.u_13a9931e/u_5f486510/u_fce954ef/u_b581cdc1/u_42480e0a/g_2c24a95e[7].g_1aeb70f6[0].g_4961f818[2].u_2182c70c/g_50106be6[1].g_9b47af81.u_15feb834/u_dsp/g_1beb2338.u_dsp48e1: When using the PreAdder and USE_DPORT is TRUE, the A operand should be restricted to 24 bit two's complement (and sign extended) to avoid over/underflow in the pre-add stage.
+Related violations: <none>
+
+REQP-1723#121 Warning
+DSP_Abus_sign_bit_restriction  
+zynq_dpu_system_i/DPUCZDX8G_0/inst/g_7d88779a.u_13a9931e/u_5f486510/u_fce954ef/u_b581cdc1/u_42480e0a/g_2c24a95e[7].g_1aeb70f6[0].g_4961f818[3].u_2182c70c/g_50106be6[0].g_9b47af81.u_15feb834/u_dsp/g_1beb2338.u_dsp48e1: When using the PreAdder and USE_DPORT is TRUE, the A operand should be restricted to 24 bit two's complement (and sign extended) to avoid over/underflow in the pre-add stage.
+Related violations: <none>
+
+REQP-1723#122 Warning
+DSP_Abus_sign_bit_restriction  
+zynq_dpu_system_i/DPUCZDX8G_0/inst/g_7d88779a.u_13a9931e/u_5f486510/u_fce954ef/u_b581cdc1/u_42480e0a/g_2c24a95e[7].g_1aeb70f6[0].g_4961f818[3].u_2182c70c/g_50106be6[1].g_9b47af81.u_15feb834/u_dsp/g_1beb2338.u_dsp48e1: When using the PreAdder and USE_DPORT is TRUE, the A operand should be restricted to 24 bit two's complement (and sign extended) to avoid over/underflow in the pre-add stage.
+Related violations: <none>
+
+REQP-1723#123 Warning
+DSP_Abus_sign_bit_restriction  
+zynq_dpu_system_i/DPUCZDX8G_0/inst/g_7d88779a.u_13a9931e/u_5f486510/u_fce954ef/u_b581cdc1/u_42480e0a/g_2c24a95e[7].g_1aeb70f6[0].g_4961f818[4].u_2182c70c/g_50106be6[0].g_9b47af81.u_15feb834/u_dsp/g_1beb2338.u_dsp48e1: When using the PreAdder and USE_DPORT is TRUE, the A operand should be restricted to 24 bit two's complement (and sign extended) to avoid over/underflow in the pre-add stage.
+Related violations: <none>
+
+REQP-1723#124 Warning
+DSP_Abus_sign_bit_restriction  
+zynq_dpu_system_i/DPUCZDX8G_0/inst/g_7d88779a.u_13a9931e/u_5f486510/u_fce954ef/u_b581cdc1/u_42480e0a/g_2c24a95e[7].g_1aeb70f6[0].g_4961f818[4].u_2182c70c/g_50106be6[1].g_9b47af81.u_15feb834/u_dsp/g_1beb2338.u_dsp48e1: When using the PreAdder and USE_DPORT is TRUE, the A operand should be restricted to 24 bit two's complement (and sign extended) to avoid over/underflow in the pre-add stage.
+Related violations: <none>
+
+REQP-1723#125 Warning
+DSP_Abus_sign_bit_restriction  
+zynq_dpu_system_i/DPUCZDX8G_0/inst/g_7d88779a.u_13a9931e/u_5f486510/u_fce954ef/u_b581cdc1/u_42480e0a/g_2c24a95e[7].g_1aeb70f6[0].g_4961f818[5].u_2182c70c/g_50106be6[0].g_9b47af81.u_15feb834/u_dsp/g_1beb2338.u_dsp48e1: When using the PreAdder and USE_DPORT is TRUE, the A operand should be restricted to 24 bit two's complement (and sign extended) to avoid over/underflow in the pre-add stage.
+Related violations: <none>
+
+REQP-1723#126 Warning
+DSP_Abus_sign_bit_restriction  
+zynq_dpu_system_i/DPUCZDX8G_0/inst/g_7d88779a.u_13a9931e/u_5f486510/u_fce954ef/u_b581cdc1/u_42480e0a/g_2c24a95e[7].g_1aeb70f6[0].g_4961f818[5].u_2182c70c/g_50106be6[1].g_9b47af81.u_15feb834/u_dsp/g_1beb2338.u_dsp48e1: When using the PreAdder and USE_DPORT is TRUE, the A operand should be restricted to 24 bit two's complement (and sign extended) to avoid over/underflow in the pre-add stage.
+Related violations: <none>
+
+REQP-1723#127 Warning
+DSP_Abus_sign_bit_restriction  
+zynq_dpu_system_i/DPUCZDX8G_0/inst/g_7d88779a.u_13a9931e/u_5f486510/u_fce954ef/u_b581cdc1/u_42480e0a/g_2c24a95e[8].g_1aeb70f6[0].g_4961f818[0].u_2182c70c/g_50106be6[0].g_9b47af81.u_15feb834/u_dsp/g_1beb2338.u_dsp48e1: When using the PreAdder and USE_DPORT is TRUE, the A operand should be restricted to 24 bit two's complement (and sign extended) to avoid over/underflow in the pre-add stage.
+Related violations: <none>
+
+REQP-1723#128 Warning
+DSP_Abus_sign_bit_restriction  
+zynq_dpu_system_i/DPUCZDX8G_0/inst/g_7d88779a.u_13a9931e/u_5f486510/u_fce954ef/u_b581cdc1/u_42480e0a/g_2c24a95e[8].g_1aeb70f6[0].g_4961f818[0].u_2182c70c/g_50106be6[1].g_9b47af81.u_15feb834/u_dsp/g_1beb2338.u_dsp48e1: When using the PreAdder and USE_DPORT is TRUE, the A operand should be restricted to 24 bit two's complement (and sign extended) to avoid over/underflow in the pre-add stage.
+Related violations: <none>
+
+REQP-1723#129 Warning
+DSP_Abus_sign_bit_restriction  
+zynq_dpu_system_i/DPUCZDX8G_0/inst/g_7d88779a.u_13a9931e/u_5f486510/u_fce954ef/u_b581cdc1/u_42480e0a/g_2c24a95e[8].g_1aeb70f6[0].g_4961f818[1].u_2182c70c/g_50106be6[0].g_9b47af81.u_15feb834/u_dsp/g_1beb2338.u_dsp48e1: When using the PreAdder and USE_DPORT is TRUE, the A operand should be restricted to 24 bit two's complement (and sign extended) to avoid over/underflow in the pre-add stage.
+Related violations: <none>
+
+REQP-1723#130 Warning
+DSP_Abus_sign_bit_restriction  
+zynq_dpu_system_i/DPUCZDX8G_0/inst/g_7d88779a.u_13a9931e/u_5f486510/u_fce954ef/u_b581cdc1/u_42480e0a/g_2c24a95e[8].g_1aeb70f6[0].g_4961f818[1].u_2182c70c/g_50106be6[1].g_9b47af81.u_15feb834/u_dsp/g_1beb2338.u_dsp48e1: When using the PreAdder and USE_DPORT is TRUE, the A operand should be restricted to 24 bit two's complement (and sign extended) to avoid over/underflow in the pre-add stage.
+Related violations: <none>
+
+REQP-1723#131 Warning
+DSP_Abus_sign_bit_restriction  
+zynq_dpu_system_i/DPUCZDX8G_0/inst/g_7d88779a.u_13a9931e/u_5f486510/u_fce954ef/u_b581cdc1/u_42480e0a/g_2c24a95e[8].g_1aeb70f6[0].g_4961f818[2].u_2182c70c/g_50106be6[0].g_9b47af81.u_15feb834/u_dsp/g_1beb2338.u_dsp48e1: When using the PreAdder and USE_DPORT is TRUE, the A operand should be restricted to 24 bit two's complement (and sign extended) to avoid over/underflow in the pre-add stage.
+Related violations: <none>
+
+REQP-1723#132 Warning
+DSP_Abus_sign_bit_restriction  
+zynq_dpu_system_i/DPUCZDX8G_0/inst/g_7d88779a.u_13a9931e/u_5f486510/u_fce954ef/u_b581cdc1/u_42480e0a/g_2c24a95e[8].g_1aeb70f6[0].g_4961f818[2].u_2182c70c/g_50106be6[1].g_9b47af81.u_15feb834/u_dsp/g_1beb2338.u_dsp48e1: When using the PreAdder and USE_DPORT is TRUE, the A operand should be restricted to 24 bit two's complement (and sign extended) to avoid over/underflow in the pre-add stage.
+Related violations: <none>
+
+REQP-1723#133 Warning
+DSP_Abus_sign_bit_restriction  
+zynq_dpu_system_i/DPUCZDX8G_0/inst/g_7d88779a.u_13a9931e/u_5f486510/u_fce954ef/u_b581cdc1/u_42480e0a/g_2c24a95e[8].g_1aeb70f6[0].g_4961f818[3].u_2182c70c/g_50106be6[0].g_9b47af81.u_15feb834/u_dsp/g_1beb2338.u_dsp48e1: When using the PreAdder and USE_DPORT is TRUE, the A operand should be restricted to 24 bit two's complement (and sign extended) to avoid over/underflow in the pre-add stage.
+Related violations: <none>
+
+REQP-1723#134 Warning
+DSP_Abus_sign_bit_restriction  
+zynq_dpu_system_i/DPUCZDX8G_0/inst/g_7d88779a.u_13a9931e/u_5f486510/u_fce954ef/u_b581cdc1/u_42480e0a/g_2c24a95e[8].g_1aeb70f6[0].g_4961f818[3].u_2182c70c/g_50106be6[1].g_9b47af81.u_15feb834/u_dsp/g_1beb2338.u_dsp48e1: When using the PreAdder and USE_DPORT is TRUE, the A operand should be restricted to 24 bit two's complement (and sign extended) to avoid over/underflow in the pre-add stage.
+Related violations: <none>
+
+REQP-1723#135 Warning
+DSP_Abus_sign_bit_restriction  
+zynq_dpu_system_i/DPUCZDX8G_0/inst/g_7d88779a.u_13a9931e/u_5f486510/u_fce954ef/u_b581cdc1/u_42480e0a/g_2c24a95e[8].g_1aeb70f6[0].g_4961f818[4].u_2182c70c/g_50106be6[0].g_9b47af81.u_15feb834/u_dsp/g_1beb2338.u_dsp48e1: When using the PreAdder and USE_DPORT is TRUE, the A operand should be restricted to 24 bit two's complement (and sign extended) to avoid over/underflow in the pre-add stage.
+Related violations: <none>
+
+REQP-1723#136 Warning
+DSP_Abus_sign_bit_restriction  
+zynq_dpu_system_i/DPUCZDX8G_0/inst/g_7d88779a.u_13a9931e/u_5f486510/u_fce954ef/u_b581cdc1/u_42480e0a/g_2c24a95e[8].g_1aeb70f6[0].g_4961f818[4].u_2182c70c/g_50106be6[1].g_9b47af81.u_15feb834/u_dsp/g_1beb2338.u_dsp48e1: When using the PreAdder and USE_DPORT is TRUE, the A operand should be restricted to 24 bit two's complement (and sign extended) to avoid over/underflow in the pre-add stage.
+Related violations: <none>
+
+REQP-1723#137 Warning
+DSP_Abus_sign_bit_restriction  
+zynq_dpu_system_i/DPUCZDX8G_0/inst/g_7d88779a.u_13a9931e/u_5f486510/u_fce954ef/u_b581cdc1/u_42480e0a/g_2c24a95e[8].g_1aeb70f6[0].g_4961f818[5].u_2182c70c/g_50106be6[0].g_9b47af81.u_15feb834/u_dsp/g_1beb2338.u_dsp48e1: When using the PreAdder and USE_DPORT is TRUE, the A operand should be restricted to 24 bit two's complement (and sign extended) to avoid over/underflow in the pre-add stage.
+Related violations: <none>
+
+REQP-1723#138 Warning
+DSP_Abus_sign_bit_restriction  
+zynq_dpu_system_i/DPUCZDX8G_0/inst/g_7d88779a.u_13a9931e/u_5f486510/u_fce954ef/u_b581cdc1/u_42480e0a/g_2c24a95e[8].g_1aeb70f6[0].g_4961f818[5].u_2182c70c/g_50106be6[1].g_9b47af81.u_15feb834/u_dsp/g_1beb2338.u_dsp48e1: When using the PreAdder and USE_DPORT is TRUE, the A operand should be restricted to 24 bit two's complement (and sign extended) to avoid over/underflow in the pre-add stage.
+Related violations: <none>
+
+REQP-1723#139 Warning
+DSP_Abus_sign_bit_restriction  
+zynq_dpu_system_i/DPUCZDX8G_0/inst/g_7d88779a.u_13a9931e/u_5f486510/u_fce954ef/u_b581cdc1/u_42480e0a/g_2c24a95e[9].g_1aeb70f6[0].g_4961f818[0].u_2182c70c/g_50106be6[0].g_9b47af81.u_15feb834/u_dsp/g_1beb2338.u_dsp48e1: When using the PreAdder and USE_DPORT is TRUE, the A operand should be restricted to 24 bit two's complement (and sign extended) to avoid over/underflow in the pre-add stage.
+Related violations: <none>
+
+REQP-1723#140 Warning
+DSP_Abus_sign_bit_restriction  
+zynq_dpu_system_i/DPUCZDX8G_0/inst/g_7d88779a.u_13a9931e/u_5f486510/u_fce954ef/u_b581cdc1/u_42480e0a/g_2c24a95e[9].g_1aeb70f6[0].g_4961f818[0].u_2182c70c/g_50106be6[1].g_9b47af81.u_15feb834/u_dsp/g_1beb2338.u_dsp48e1: When using the PreAdder and USE_DPORT is TRUE, the A operand should be restricted to 24 bit two's complement (and sign extended) to avoid over/underflow in the pre-add stage.
+Related violations: <none>
+
+REQP-1723#141 Warning
+DSP_Abus_sign_bit_restriction  
+zynq_dpu_system_i/DPUCZDX8G_0/inst/g_7d88779a.u_13a9931e/u_5f486510/u_fce954ef/u_b581cdc1/u_42480e0a/g_2c24a95e[9].g_1aeb70f6[0].g_4961f818[1].u_2182c70c/g_50106be6[0].g_9b47af81.u_15feb834/u_dsp/g_1beb2338.u_dsp48e1: When using the PreAdder and USE_DPORT is TRUE, the A operand should be restricted to 24 bit two's complement (and sign extended) to avoid over/underflow in the pre-add stage.
+Related violations: <none>
+
+REQP-1723#142 Warning
+DSP_Abus_sign_bit_restriction  
+zynq_dpu_system_i/DPUCZDX8G_0/inst/g_7d88779a.u_13a9931e/u_5f486510/u_fce954ef/u_b581cdc1/u_42480e0a/g_2c24a95e[9].g_1aeb70f6[0].g_4961f818[1].u_2182c70c/g_50106be6[1].g_9b47af81.u_15feb834/u_dsp/g_1beb2338.u_dsp48e1: When using the PreAdder and USE_DPORT is TRUE, the A operand should be restricted to 24 bit two's complement (and sign extended) to avoid over/underflow in the pre-add stage.
+Related violations: <none>
+
+REQP-1723#143 Warning
+DSP_Abus_sign_bit_restriction  
+zynq_dpu_system_i/DPUCZDX8G_0/inst/g_7d88779a.u_13a9931e/u_5f486510/u_fce954ef/u_b581cdc1/u_42480e0a/g_2c24a95e[9].g_1aeb70f6[0].g_4961f818[2].u_2182c70c/g_50106be6[0].g_9b47af81.u_15feb834/u_dsp/g_1beb2338.u_dsp48e1: When using the PreAdder and USE_DPORT is TRUE, the A operand should be restricted to 24 bit two's complement (and sign extended) to avoid over/underflow in the pre-add stage.
+Related violations: <none>
+
+REQP-1723#144 Warning
+DSP_Abus_sign_bit_restriction  
+zynq_dpu_system_i/DPUCZDX8G_0/inst/g_7d88779a.u_13a9931e/u_5f486510/u_fce954ef/u_b581cdc1/u_42480e0a/g_2c24a95e[9].g_1aeb70f6[0].g_4961f818[2].u_2182c70c/g_50106be6[1].g_9b47af81.u_15feb834/u_dsp/g_1beb2338.u_dsp48e1: When using the PreAdder and USE_DPORT is TRUE, the A operand should be restricted to 24 bit two's complement (and sign extended) to avoid over/underflow in the pre-add stage.
+Related violations: <none>
+
+REQP-1723#145 Warning
+DSP_Abus_sign_bit_restriction  
+zynq_dpu_system_i/DPUCZDX8G_0/inst/g_7d88779a.u_13a9931e/u_5f486510/u_fce954ef/u_b581cdc1/u_42480e0a/g_2c24a95e[9].g_1aeb70f6[0].g_4961f818[3].u_2182c70c/g_50106be6[0].g_9b47af81.u_15feb834/u_dsp/g_1beb2338.u_dsp48e1: When using the PreAdder and USE_DPORT is TRUE, the A operand should be restricted to 24 bit two's complement (and sign extended) to avoid over/underflow in the pre-add stage.
+Related violations: <none>
+
+REQP-1723#146 Warning
+DSP_Abus_sign_bit_restriction  
+zynq_dpu_system_i/DPUCZDX8G_0/inst/g_7d88779a.u_13a9931e/u_5f486510/u_fce954ef/u_b581cdc1/u_42480e0a/g_2c24a95e[9].g_1aeb70f6[0].g_4961f818[3].u_2182c70c/g_50106be6[1].g_9b47af81.u_15feb834/u_dsp/g_1beb2338.u_dsp48e1: When using the PreAdder and USE_DPORT is TRUE, the A operand should be restricted to 24 bit two's complement (and sign extended) to avoid over/underflow in the pre-add stage.
+Related violations: <none>
+
+REQP-1723#147 Warning
+DSP_Abus_sign_bit_restriction  
+zynq_dpu_system_i/DPUCZDX8G_0/inst/g_7d88779a.u_13a9931e/u_5f486510/u_fce954ef/u_b581cdc1/u_42480e0a/g_2c24a95e[9].g_1aeb70f6[0].g_4961f818[4].u_2182c70c/g_50106be6[0].g_9b47af81.u_15feb834/u_dsp/g_1beb2338.u_dsp48e1: When using the PreAdder and USE_DPORT is TRUE, the A operand should be restricted to 24 bit two's complement (and sign extended) to avoid over/underflow in the pre-add stage.
+Related violations: <none>
+
+REQP-1723#148 Warning
+DSP_Abus_sign_bit_restriction  
+zynq_dpu_system_i/DPUCZDX8G_0/inst/g_7d88779a.u_13a9931e/u_5f486510/u_fce954ef/u_b581cdc1/u_42480e0a/g_2c24a95e[9].g_1aeb70f6[0].g_4961f818[4].u_2182c70c/g_50106be6[1].g_9b47af81.u_15feb834/u_dsp/g_1beb2338.u_dsp48e1: When using the PreAdder and USE_DPORT is TRUE, the A operand should be restricted to 24 bit two's complement (and sign extended) to avoid over/underflow in the pre-add stage.
+Related violations: <none>
+
+REQP-1723#149 Warning
+DSP_Abus_sign_bit_restriction  
+zynq_dpu_system_i/DPUCZDX8G_0/inst/g_7d88779a.u_13a9931e/u_5f486510/u_fce954ef/u_b581cdc1/u_42480e0a/g_2c24a95e[9].g_1aeb70f6[0].g_4961f818[5].u_2182c70c/g_50106be6[0].g_9b47af81.u_15feb834/u_dsp/g_1beb2338.u_dsp48e1: When using the PreAdder and USE_DPORT is TRUE, the A operand should be restricted to 24 bit two's complement (and sign extended) to avoid over/underflow in the pre-add stage.
+Related violations: <none>
+
+REQP-1723#150 Warning
+DSP_Abus_sign_bit_restriction  
+zynq_dpu_system_i/DPUCZDX8G_0/inst/g_7d88779a.u_13a9931e/u_5f486510/u_fce954ef/u_b581cdc1/u_42480e0a/g_2c24a95e[9].g_1aeb70f6[0].g_4961f818[5].u_2182c70c/g_50106be6[1].g_9b47af81.u_15feb834/u_dsp/g_1beb2338.u_dsp48e1: When using the PreAdder and USE_DPORT is TRUE, the A operand should be restricted to 24 bit two's complement (and sign extended) to avoid over/underflow in the pre-add stage.
+Related violations: <none>
+
+

@@ -1,0 +1,6 @@
+verilog xil_defaultlib --include "/tools/Xilinx/Vivado/2020.2/data/xilinx_vip/include" --include "../../../../my_zedboard_project_1.gen/sources_1/bd/zynq_dpu_system/ipshared/ec67/hdl" --include "../../../../my_zedboard_project_1.gen/sources_1/bd/zynq_dpu_system/ipshared/34f8/hdl" \
+"../../../bd/zynq_dpu_system/ip/zynq_dpu_system_processing_system7_0_0/sim/zynq_dpu_system_processing_system7_0_0.v" \
+
+verilog xil_defaultlib "glbl.v"
+
+nosort

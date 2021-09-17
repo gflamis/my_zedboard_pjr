@@ -1,0 +1,9 @@
+{
+	"version": "1.0",
+	"modules": {
+		"zynq_dpu_system": {
+			"proto_instances": {
+			}
+		}
+	}
+}
